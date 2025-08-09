@@ -1,0 +1,22 @@
+# 68tt 网站抓取工具依赖包
+
+# 基础HTTP和HTML处理
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+urllib3>=2.0.0
+html5lib>=1.1
+
+# 异步HTTP客户端 (用于MCP抓取器)
+aiohttp>=3.9.0
+aiofiles>=23.0.0
+
+# JSON和数据处理
+ujson>=5.8.0
+
+# 命令行工具
+click>=8.1.0
+rich>=13.0.0
+
+# Firecrawl Python SDK (可选)
+firecrawl-py>=0.0.16

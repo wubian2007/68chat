@@ -1,0 +1,124 @@
+{
+  "status": "completed",
+  "current": 5,
+  "total": 5,
+  "data": [
+    {
+      "content": "![](https://68tt.co/images/up-arrow.png)\n\n![](https://68tt.co/images/headImg.png)\n\n一個安全的私密聊天APP\n\n68 將以强大的安全性加密保護你的訊息隱私，這表示著只有\n\n你和對話的好友才擁有所有聊天訊息。\n\n[專業版下載](https://68tt.co/cn/enterprise.html)\n\n[App\\\\\nStore下載](https://68tt.co/mobile/index.html)\n\n[免費下載](https://a1.888317.xyz/68chat_prod_release_6_0_2_20250805134622_1d7848f46_2565_protected.apk)\n\nGoogle Play下載\n\n![](https://68tt.co/images/qrcode-icon.png)\n\n掃描QR-CODE下載APP\n\n支援iOS、Android手機\n\n[![](https://68tt.co/images/wins.png)\\\\\n\\\\\n下載Windows程式\\\\\n\\\\\n相容 Windows 7 及更高版本](https://a1.888317.xyz/68-new-1.6.4-win-x64-setup.exe) [![](https://68tt.co/images/ios.png)\\\\\n\\\\\n下載Mac程式\\\\\n\\\\\n相容 macOS 10.10 及更高版本](https://a1.888317.xyz/68-new-1.6.4-mac-universal.dmg)\n\n安全\n\n點對點訊息加密傳輸，保障你的隱私\n\n自由\n\n68對你的聊天沒有限制，讓你可盡情暢聊\n\n快速\n\n輕量、快速地傳送訊息，保持高效溝通\n\n![](https://68tt.co/images/picture.png)\n\n[![](https://68tt.co/images/totop.png)](https://68tt.co/cn/#top)\n\n![](https://68tt.co/images/qrcode.png)\n\n掃QR CODE下載 \"68\" APP\n\n![](https://68tt.co/images/qricon.png)\n\n![](https://68tt.co/images/w-bottom.png)\n\n68\n\n支援蘋果、安卓手機\n\n[免費下載](https://68tt.co/download.html)",
+      "markdown": "![](https://68tt.co/images/up-arrow.png)\n\n![](https://68tt.co/images/headImg.png)\n\n一個安全的私密聊天APP\n\n68 將以强大的安全性加密保護你的訊息隱私，這表示著只有\n\n你和對話的好友才擁有所有聊天訊息。\n\n[專業版下載](https://68tt.co/cn/enterprise.html)\n\n[App\\\\\nStore下載](https://68tt.co/mobile/index.html)\n\n[免費下載](https://a1.888317.xyz/68chat_prod_release_6_0_2_20250805134622_1d7848f46_2565_protected.apk)\n\nGoogle Play下載\n\n![](https://68tt.co/images/qrcode-icon.png)\n\n掃描QR-CODE下載APP\n\n支援iOS、Android手機\n\n[![](https://68tt.co/images/wins.png)\\\\\n\\\\\n下載Windows程式\\\\\n\\\\\n相容 Windows 7 及更高版本](https://a1.888317.xyz/68-new-1.6.4-win-x64-setup.exe) [![](https://68tt.co/images/ios.png)\\\\\n\\\\\n下載Mac程式\\\\\n\\\\\n相容 macOS 10.10 及更高版本](https://a1.888317.xyz/68-new-1.6.4-mac-universal.dmg)\n\n安全\n\n點對點訊息加密傳輸，保障你的隱私\n\n自由\n\n68對你的聊天沒有限制，讓你可盡情暢聊\n\n快速\n\n輕量、快速地傳送訊息，保持高效溝通\n\n![](https://68tt.co/images/picture.png)\n\n[![](https://68tt.co/images/totop.png)](https://68tt.co/cn/#top)\n\n![](https://68tt.co/images/qrcode.png)\n\n掃QR CODE下載 \"68\" APP\n\n![](https://68tt.co/images/qricon.png)\n\n![](https://68tt.co/images/w-bottom.png)\n\n68\n\n支援蘋果、安卓手機\n\n[免費下載](https://68tt.co/download.html)",
+      "html": "<!DOCTYPE html><html lang=\"zh-CN\">\n\n  <body class=\"cn\">\n    <div class=\"main-wrapper\">\n      \n      \n      <div class=\"up-arrow\"><img src=\"https://68tt.co/images/up-arrow.png\" alt=\"\"></div>\n      <div class=\"banner\" id=\"top\">\n        <div class=\"bg\">\n          <div class=\"headImg\"><img src=\"https://68tt.co/images/headImg.png\" alt=\"\"></div>\n          <div class=\"title\">一個安全的私密聊天APP</div>\n          <div class=\"description\">68 將以强大的安全性加密保護你的訊息隱私，這表示著只有<br>你和對話的好友才擁有所有聊天訊息。</div>\n        </div>\n      </div>\n      <div class=\"phone-inner\">\n        <div class=\"download\">\n          <div id=\"ios-box\" style=\"margin-bottom: 20px;\">\n            <div class=\"download-btn text\"><a href=\"https://68tt.co/cn/enterprise.html\">專業版下載</a></div>\n            <div class=\"download-btn text\" id=\"ios-btn\"><a href=\"https://68tt.co/mobile/index.html\">App\n              Store下載</a></div>\n          </div>\n          <div id=\"android-box\" style=\"margin-bottom: 20px;\">\n            <div class=\"download-btn text\" id=\"android-btn\"><a id=\"android_url\" href=\"https://a1.888317.xyz/68chat_prod_release_6_0_2_20250805134622_1d7848f46_2565_protected.apk\">免費下載</a></div>\n            <div class=\"download-btn text\" id=\"goole-down\">Google Play下載</div>\n          </div>\n        </div>\n      </div>\n      <div class=\"Index-inner\" style=\"padding-top:50px\">\n        <div class=\"download\" id=\"downloadBox\">\n          <div class=\"box\">\n            <div class=\"box-img\" id=\"qrcode\"><img src=\"https://68tt.co/images/qrcode-icon.png\" class=\"icons\"><canvas width=\"252\" height=\"252\"></canvas></div>\n            <div class=\"box-text\">掃描QR-CODE下載APP</div>\n            <p>支援iOS、Android手機</p>\n          </div><a id=\"windows_url\" download=\"\" class=\"box\" href=\"https://a1.888317.xyz/68-new-1.6.4-win-x64-setup.exe\">\n            <div class=\"box-img downloadhover\"><img src=\"https://68tt.co/images/wins.png\" alt=\"\"></div>\n            <div class=\"box-text\">下載Windows程式</div>\n            <p>相容 Windows 7 及更高版本</p>\n          </a><a id=\"mac_url\" download=\"\" class=\"box\" href=\"https://a1.888317.xyz/68-new-1.6.4-mac-universal.dmg\">\n            <div class=\"box-img downloadhover\"><img src=\"https://68tt.co/images/ios.png\" alt=\"\"></div>\n            <div class=\"box-text\">下載Mac程式</div>\n            <p>相容 macOS 10.10 及更高版本</p>\n          </a>\n        </div>\n        <div class=\"block block-hide\" id=\"block-1\">\n          <div class=\"title\">安全</div>\n          <div class=\"description\">點對點訊息加密傳輸，保障你的隱私</div>\n          <div class=\"Img\"></div>\n        </div>\n        <div class=\"block block-hide\" id=\"block-2\">\n          <div class=\"title\">自由</div>\n          <div class=\"description\">68對你的聊天沒有限制，讓你可盡情暢聊</div>\n          <div class=\"Img\"></div>\n        </div>\n        <div class=\"block block-hide\" id=\"block-3\">\n          <div class=\"title\">快速</div>\n          <div class=\"description\">輕量、快速地傳送訊息，保持高效溝通</div>\n          <div class=\"Img\"></div>\n        </div>\n        <div class=\"bottom-Img\"><img src=\"https://68tt.co/images/picture.png\" alt=\"\"></div>\n      </div>\n      <div class=\"fiexd-block\">\n        <div class=\"toTop hide\"><a href=\"https://68tt.co/cn/#top\"><img src=\"https://68tt.co/images/totop.png\" alt=\"\"></a></div>\n        <div class=\"qrcode\"><img src=\"https://68tt.co/images/qrcode.png\" alt=\"\">\n          <div class=\"detail\">\n            <div class=\"text\">掃QR CODE下載 \"68\" APP</div>\n            <div class=\"img\" id=\"qrcodeBottom\"><img src=\"https://68tt.co/images/qricon.png\" id=\"qricon\" ;=\"\" alt=\"\"><canvas width=\"400\" height=\"400\"></canvas></div>\n          </div>\n        </div>\n      </div>\n      <div class=\"phone-inner bottom-download\">\n        <div class=\"icon\"><img src=\"https://68tt.co/images/w-bottom.png\" alt=\"\"></div>\n        <div class=\"icon-text\">68</div>\n        <div class=\"download\">\n          <div class=\"download-text\">支援蘋果、安卓手機</div>\n          <div class=\"download-btn\"><a href=\"https://68tt.co/download.html\">免費下載</a></div>\n        </div>\n      </div>\n      \n      \n      \n      \n    </div>\n    \n    \n    \n    \n    \n    <!-- Google tag (gtag.js) -->\n    \n    \n  \n\n\n</body></html>",
+      "linksOnPage": [
+        "https://68tt.co/cn/enterprise.html",
+        "https://68tt.co/mobile/index.html",
+        "https://a1.888317.xyz/68chat_prod_release_6_0_2_20250805134622_1d7848f46_2565_protected.apk",
+        "https://a1.888317.xyz/68-new-1.6.4-win-x64-setup.exe",
+        "https://a1.888317.xyz/68-new-1.6.4-mac-universal.dmg",
+        "https://68tt.co/cn/#top",
+        "https://68tt.co/download.html"
+      ],
+      "metadata": {
+        "viewport": "width=device-width,initial-scale=1,user-scalable=no",
+        "title": "68-安全加密即時聊天工具",
+        "favicon": "https://68tt.co/images/favicon.ico",
+        "language": "zh-CN",
+        "scrapeId": "e52cc199-9237-4d38-9f13-df80f70e3696",
+        "sourceURL": "https://68tt.co/cn/",
+        "url": "https://68tt.co/cn/",
+        "contentType": "text/html",
+        "proxyUsed": "basic",
+        "creditsUsed": 1,
+        "pageStatusCode": 200
+      }
+    },
+    {
+      "content": "![](https://68tt.co/images/up-arrow.png)\n\n![](https://68tt.co/images/headImg.png)\n\n一個安全的私密聊天APP\n\n68 將以强大的安全性加密保護你的訊息隱私，這表示著只有\n\n你和對話的好友才擁有所有聊天訊息。\n\n[專業版下載](https://68tt.co/cn/enterprise.html)\n\n[App\\\\\nStore下載](https://68tt.co/mobile/index.html)\n\n[免費下載](https://a1.888317.xyz/68chat_prod_release_6_0_2_20250805134622_1d7848f46_2565_protected.apk)\n\nGoogle Play下載\n\n![](https://68tt.co/images/qrcode-icon.png)\n\n掃描QR-CODE下載APP\n\n支援iOS、Android手機\n\n[![](https://68tt.co/images/wins.png)\\\\\n\\\\\n下載Windows程式\\\\\n\\\\\n相容 Windows 7 及更高版本](https://a1.888317.xyz/68-new-1.6.4-win-x64-setup.exe) [![](https://68tt.co/images/ios.png)\\\\\n\\\\\n下載Mac程式\\\\\n\\\\\n相容 macOS 10.10 及更高版本](https://a1.888317.xyz/68-new-1.6.4-mac-universal.dmg)\n\n安全\n\n點對點訊息加密傳輸，保障你的隱私\n\n自由\n\n68對你的聊天沒有限制，讓你可盡情暢聊\n\n快速\n\n輕量、快速地傳送訊息，保持高效溝通\n\n![](https://68tt.co/images/picture.png)\n\n[![](https://68tt.co/images/totop.png)](https://68tt.co/cn/index.html#top)\n\n![](https://68tt.co/images/qrcode.png)\n\n掃QR CODE下載 \"68\" APP\n\n![](https://68tt.co/images/qricon.png)\n\n![](https://68tt.co/images/w-bottom.png)\n\n68\n\n支援蘋果、安卓手機\n\n[免費下載](https://68tt.co/download.html)",
+      "markdown": "![](https://68tt.co/images/up-arrow.png)\n\n![](https://68tt.co/images/headImg.png)\n\n一個安全的私密聊天APP\n\n68 將以强大的安全性加密保護你的訊息隱私，這表示著只有\n\n你和對話的好友才擁有所有聊天訊息。\n\n[專業版下載](https://68tt.co/cn/enterprise.html)\n\n[App\\\\\nStore下載](https://68tt.co/mobile/index.html)\n\n[免費下載](https://a1.888317.xyz/68chat_prod_release_6_0_2_20250805134622_1d7848f46_2565_protected.apk)\n\nGoogle Play下載\n\n![](https://68tt.co/images/qrcode-icon.png)\n\n掃描QR-CODE下載APP\n\n支援iOS、Android手機\n\n[![](https://68tt.co/images/wins.png)\\\\\n\\\\\n下載Windows程式\\\\\n\\\\\n相容 Windows 7 及更高版本](https://a1.888317.xyz/68-new-1.6.4-win-x64-setup.exe) [![](https://68tt.co/images/ios.png)\\\\\n\\\\\n下載Mac程式\\\\\n\\\\\n相容 macOS 10.10 及更高版本](https://a1.888317.xyz/68-new-1.6.4-mac-universal.dmg)\n\n安全\n\n點對點訊息加密傳輸，保障你的隱私\n\n自由\n\n68對你的聊天沒有限制，讓你可盡情暢聊\n\n快速\n\n輕量、快速地傳送訊息，保持高效溝通\n\n![](https://68tt.co/images/picture.png)\n\n[![](https://68tt.co/images/totop.png)](https://68tt.co/cn/index.html#top)\n\n![](https://68tt.co/images/qrcode.png)\n\n掃QR CODE下載 \"68\" APP\n\n![](https://68tt.co/images/qricon.png)\n\n![](https://68tt.co/images/w-bottom.png)\n\n68\n\n支援蘋果、安卓手機\n\n[免費下載](https://68tt.co/download.html)",
+      "html": "<!DOCTYPE html><html lang=\"zh-CN\">\n\n  <body class=\"cn\">\n    <div class=\"main-wrapper\">\n      \n      \n      <div class=\"up-arrow\"><img src=\"https://68tt.co/images/up-arrow.png\" alt=\"\"></div>\n      <div class=\"banner\" id=\"top\">\n        <div class=\"bg\">\n          <div class=\"headImg\"><img src=\"https://68tt.co/images/headImg.png\" alt=\"\"></div>\n          <div class=\"title\">一個安全的私密聊天APP</div>\n          <div class=\"description\">68 將以强大的安全性加密保護你的訊息隱私，這表示著只有<br>你和對話的好友才擁有所有聊天訊息。</div>\n        </div>\n      </div>\n      <div class=\"phone-inner\">\n        <div class=\"download\">\n          <div id=\"ios-box\" style=\"margin-bottom: 20px;\">\n            <div class=\"download-btn text\"><a href=\"https://68tt.co/cn/enterprise.html\">專業版下載</a></div>\n            <div class=\"download-btn text\" id=\"ios-btn\"><a href=\"https://68tt.co/mobile/index.html\">App\n              Store下載</a></div>\n          </div>\n          <div id=\"android-box\" style=\"margin-bottom: 20px;\">\n            <div class=\"download-btn text\" id=\"android-btn\"><a id=\"android_url\" href=\"https://a1.888317.xyz/68chat_prod_release_6_0_2_20250805134622_1d7848f46_2565_protected.apk\">免費下載</a></div>\n            <div class=\"download-btn text\" id=\"goole-down\">Google Play下載</div>\n          </div>\n        </div>\n      </div>\n      <div class=\"Index-inner\" style=\"padding-top:50px\">\n        <div class=\"download\" id=\"downloadBox\">\n          <div class=\"box\">\n            <div class=\"box-img\" id=\"qrcode\"><img src=\"https://68tt.co/images/qrcode-icon.png\" class=\"icons\"><canvas width=\"252\" height=\"252\"></canvas></div>\n            <div class=\"box-text\">掃描QR-CODE下載APP</div>\n            <p>支援iOS、Android手機</p>\n          </div><a id=\"windows_url\" download=\"\" class=\"box\" href=\"https://a1.888317.xyz/68-new-1.6.4-win-x64-setup.exe\">\n            <div class=\"box-img downloadhover\"><img src=\"https://68tt.co/images/wins.png\" alt=\"\"></div>\n            <div class=\"box-text\">下載Windows程式</div>\n            <p>相容 Windows 7 及更高版本</p>\n          </a><a id=\"mac_url\" download=\"\" class=\"box\" href=\"https://a1.888317.xyz/68-new-1.6.4-mac-universal.dmg\">\n            <div class=\"box-img downloadhover\"><img src=\"https://68tt.co/images/ios.png\" alt=\"\"></div>\n            <div class=\"box-text\">下載Mac程式</div>\n            <p>相容 macOS 10.10 及更高版本</p>\n          </a>\n        </div>\n        <div class=\"block block-hide\" id=\"block-1\">\n          <div class=\"title\">安全</div>\n          <div class=\"description\">點對點訊息加密傳輸，保障你的隱私</div>\n          <div class=\"Img\"></div>\n        </div>\n        <div class=\"block block-hide\" id=\"block-2\">\n          <div class=\"title\">自由</div>\n          <div class=\"description\">68對你的聊天沒有限制，讓你可盡情暢聊</div>\n          <div class=\"Img\"></div>\n        </div>\n        <div class=\"block block-hide\" id=\"block-3\">\n          <div class=\"title\">快速</div>\n          <div class=\"description\">輕量、快速地傳送訊息，保持高效溝通</div>\n          <div class=\"Img\"></div>\n        </div>\n        <div class=\"bottom-Img\"><img src=\"https://68tt.co/images/picture.png\" alt=\"\"></div>\n      </div>\n      <div class=\"fiexd-block\">\n        <div class=\"toTop hide\"><a href=\"https://68tt.co/cn/index.html#top\"><img src=\"https://68tt.co/images/totop.png\" alt=\"\"></a></div>\n        <div class=\"qrcode\"><img src=\"https://68tt.co/images/qrcode.png\" alt=\"\">\n          <div class=\"detail\">\n            <div class=\"text\">掃QR CODE下載 \"68\" APP</div>\n            <div class=\"img\" id=\"qrcodeBottom\"><img src=\"https://68tt.co/images/qricon.png\" id=\"qricon\" ;=\"\" alt=\"\"><canvas width=\"400\" height=\"400\"></canvas></div>\n          </div>\n        </div>\n      </div>\n      <div class=\"phone-inner bottom-download\">\n        <div class=\"icon\"><img src=\"https://68tt.co/images/w-bottom.png\" alt=\"\"></div>\n        <div class=\"icon-text\">68</div>\n        <div class=\"download\">\n          <div class=\"download-text\">支援蘋果、安卓手機</div>\n          <div class=\"download-btn\"><a href=\"https://68tt.co/download.html\">免費下載</a></div>\n        </div>\n      </div>\n      \n      \n      \n      \n    </div>\n    \n    \n    \n    \n    \n    <!-- Google tag (gtag.js) -->\n    \n    \n  \n\n\n</body></html>",
+      "linksOnPage": [
+        "https://68tt.co/cn/enterprise.html",
+        "https://68tt.co/mobile/index.html",
+        "https://a1.888317.xyz/68chat_prod_release_6_0_2_20250805134622_1d7848f46_2565_protected.apk",
+        "https://a1.888317.xyz/68-new-1.6.4-win-x64-setup.exe",
+        "https://a1.888317.xyz/68-new-1.6.4-mac-universal.dmg",
+        "https://68tt.co/cn/index.html#top",
+        "https://68tt.co/download.html"
+      ],
+      "metadata": {
+        "viewport": "width=device-width,initial-scale=1,user-scalable=no",
+        "favicon": "https://68tt.co/images/favicon.ico",
+        "title": "68-安全加密即時聊天工具",
+        "language": "zh-CN",
+        "scrapeId": "c1ed973d-1514-4137-bc7a-b610a2ba972d",
+        "sourceURL": "https://68tt.co/cn/index.html",
+        "url": "https://68tt.co/cn/index.html",
+        "contentType": "text/html",
+        "proxyUsed": "basic",
+        "creditsUsed": 1,
+        "pageStatusCode": 200
+      }
+    },
+    {
+      "content": "關於我们\n\n\"68\"是一款注重安全和隱私的即時通訊軟體。它非常快速、簡單、安全，用户可發送無限量的訊息、照片，用來幫助他們保持高效率的溝通。信息氾濫的時代，\"68\"將以保護用戶隱私為首要任務，不斷提高本身服务水平，努力成為最好的保障用户隱私的即時通訊軟體平台。",
+      "markdown": "關於我们\n\n\"68\"是一款注重安全和隱私的即時通訊軟體。它非常快速、簡單、安全，用户可發送無限量的訊息、照片，用來幫助他們保持高效率的溝通。信息氾濫的時代，\"68\"將以保護用戶隱私為首要任務，不斷提高本身服务水平，努力成為最好的保障用户隱私的即時通訊軟體平台。",
+      "html": "<!DOCTYPE html><html lang=\"zh-CN\">\n\n<body>\n    <div class=\"main-wrapper\">\n        \n    \n    <div class=\"about-inner\">\n        <div class=\"title\">關於我们</div>\n        <div class=\"description\">\n            \"68\"是一款注重安全和隱私的即時通訊軟體。它非常快速、簡單、安全，用户可發送無限量的訊息、照片，用來幫助他們保持高效率的溝通。信息氾濫的時代，\"68\"將以保護用戶隱私為首要任務，不斷提高本身服务水平，努力成為最好的保障用户隱私的即時通訊軟體平台。\n        </div>\n    </div>\n    \n    \n    \n    \n    \n    </div>\n\n\n\n</body></html>",
+      "linksOnPage": [],
+      "metadata": {
+        "viewport": "width=device-width,initial-scale=1,user-scalable=no",
+        "favicon": "https://68tt.co/images/favicon.ico",
+        "title": "68-安全加密即時聊天工具",
+        "language": "zh-CN",
+        "scrapeId": "a0702973-6bc7-438d-ba47-e1a8ac527f08",
+        "sourceURL": "https://68tt.co/cn/about.html",
+        "url": "https://68tt.co/cn/about.html",
+        "contentType": "text/html",
+        "proxyUsed": "basic",
+        "creditsUsed": 1,
+        "pageStatusCode": 200
+      },
+      "warning": "This scrape job was throttled at your current concurrency limit. If you'd like to scrape faster, you can upgrade your plan."
+    },
+    {
+      "content": "隱私與政策\n\n關於共享數據\n\n我們絕不與任何人分享你的數據。\n\n關於存儲數據\n\n所有數據都經過高度加密存儲，本地工程師或物理入侵者同樣無法訪問用戶數據。\n\n關於私聊\n\n所有私聊中的對話信息和通話都使用的端對端加密。這意味著所有數據都只有您和聊天好友知道，對於我們或任何人來說，如果沒有直接訪問您的設備，就無法了解這些消息中發送的內容。我們不會將您的私密聊天記錄保存在我們的服務器上，我們也不會在私密聊天中保存任何消息日誌，因此我們無法得知您通過秘密聊天向誰發送消息或何時發送消息。\n\n\n關於私聊中的文件\n\n當您通過68發送照片，視頻或文件，在發送之前，每個項目都會使用服務器不知道的單獨密鑰進行加密，並將密鑰也發送給您的聊天好友，他可以下載並解密該文件。從技術上講，該文件位於68的一個服務器上，它看起來就像一個隨機的、無法破譯的垃圾。除了您和您​​的聊天好友外，我們都不知道這個隨機數據代表什麼，我們並不知道它屬於哪個特定的聊天文件。\n\n\n聯繫人\n\n在同步您的聯繫人之前，我們會徵求您的同意，我們不會存儲關於您的聯繫人的其他數據。\n\n刪除信息\n\n您刪除所有內容都將永久刪除。\n\n更多說明請查看 [用戶協議](https://68tt.co/cn/agreement.html)",
+      "markdown": "隱私與政策\n\n關於共享數據\n\n我們絕不與任何人分享你的數據。\n\n關於存儲數據\n\n所有數據都經過高度加密存儲，本地工程師或物理入侵者同樣無法訪問用戶數據。\n\n關於私聊\n\n所有私聊中的對話信息和通話都使用的端對端加密。這意味著所有數據都只有您和聊天好友知道，對於我們或任何人來說，如果沒有直接訪問您的設備，就無法了解這些消息中發送的內容。我們不會將您的私密聊天記錄保存在我們的服務器上，我們也不會在私密聊天中保存任何消息日誌，因此我們無法得知您通過秘密聊天向誰發送消息或何時發送消息。\n\n\n關於私聊中的文件\n\n當您通過68發送照片，視頻或文件，在發送之前，每個項目都會使用服務器不知道的單獨密鑰進行加密，並將密鑰也發送給您的聊天好友，他可以下載並解密該文件。從技術上講，該文件位於68的一個服務器上，它看起來就像一個隨機的、無法破譯的垃圾。除了您和您​​的聊天好友外，我們都不知道這個隨機數據代表什麼，我們並不知道它屬於哪個特定的聊天文件。\n\n\n聯繫人\n\n在同步您的聯繫人之前，我們會徵求您的同意，我們不會存儲關於您的聯繫人的其他數據。\n\n刪除信息\n\n您刪除所有內容都將永久刪除。\n\n更多說明請查看 [用戶協議](https://68tt.co/cn/agreement.html)",
+      "html": "<!DOCTYPE html><html lang=\"zh-CN\">\n\n<body>\n    <div class=\"main-wrapper\">\n        \n    \n    <div class=\"privacy-inner\">\n        <div class=\"title\">隱私與政策</div>\n        <div class=\"content\">\n            <div class=\"content-title\">關於共享數據</div>\n            <div class=\"content-description\">我們絕不與任何人分享你的數據。 </div>\n            <div class=\"content-title\">關於存儲數據</div>\n            <div class=\"content-description\">所有數據都經過高度加密存儲，本地工程師或物理入侵者同樣無法訪問用戶數據。 </div>\n            <div class=\"content-title\">關於私聊</div>\n            <div class=\"content-description\">\n                所有私聊中的對話信息和通話都使用的端對端加密。這意味著所有數據都只有您和聊天好友知道，對於我們或任何人來說，如果沒有直接訪問您的設備，就無法了解這些消息中發送的內容。我們不會將您的私密聊天記錄保存在我們的服務器上，我們也不會在私密聊天中保存任何消息日誌，因此我們無法得知您通過秘密聊天向誰發送消息或何時發送消息。\n            </div>\n            <div class=\"content-title\">關於私聊中的文件</div>\n            <div class=\"content-description\">\n                當您通過68發送照片，視頻或文件，在發送之前，每個項目都會使用服務器不知道的單獨密鑰進行加密，並將密鑰也發送給您的聊天好友，他可以下載並解密該文件。從技術上講，該文件位於68的一個服務器上，它看起來就像一個隨機的、無法破譯的垃圾。除了您和您​​的聊天好友外，我們都不知道這個隨機數據代表什麼，我們並不知道它屬於哪個特定的聊天文件。\n            </div>\n            <div class=\"content-title\">聯繫人</div>\n            <div class=\"content-description\">在同步您的聯繫人之前，我們會徵求您的同意，我們不會存儲關於您的聯繫人的其他數據。 </div>\n            <div class=\"content-title\">刪除信息</div>\n            <div class=\"content-description\">您刪除所有內容都將永久刪除。</div>\n            <div class=\"content-description\">更多說明請查看 <span><a href=\"https://68tt.co/cn/agreement.html\" target=\"_blank\">用戶協議</a></span>\n            </div>\n        </div>\n    </div>\n    \n    \n    \n    \n    \n    </div>\n\n\n\n</body></html>",
+      "linksOnPage": [
+        "https://68tt.co/cn/agreement.html"
+      ],
+      "metadata": {
+        "favicon": "https://68tt.co/images/favicon.ico",
+        "viewport": "width=device-width,initial-scale=1,user-scalable=no",
+        "title": "68-安全加密即時聊天工具",
+        "language": "zh-CN",
+        "scrapeId": "2036ce84-032c-4461-9610-eb338e09dc1c",
+        "sourceURL": "https://68tt.co/cn/privacy.html",
+        "url": "https://68tt.co/cn/privacy.html",
+        "contentType": "text/html",
+        "proxyUsed": "basic",
+        "creditsUsed": 1,
+        "pageStatusCode": 200
+      },
+      "warning": "This scrape job was throttled at your current concurrency limit. If you'd like to scrape faster, you can upgrade your plan."
+    },
+    {
+      "content": "1、首次打開手動安裝的企業級應用時，會看到一個通知，提示該應用的開發者在設備上不受信任。您可以關閉此信息，但您無法打開該應用。\n\n\n![](https://68tt.co/images/enterprise/step1.png)\n\n2、點擊「設置」>「通用」>「描述文件」或「描述文件與設備管理」。在「企業級應用」標題下方，您將看到該開發者的描述文件。\n\n\n![](https://68tt.co/images/enterprise/step2.png)\n\n3、點擊「企業級應用」標題下的開發者描述文件名稱，來針對此開發者建立信任。\n\n\n![](https://68tt.co/images/enterprise/step3.png)\n\n4、根據彈框提示信息，點擊”信任”。返回手機桌面，即可以正常訪問68 App。\n\n\n![](https://68tt.co/images/enterprise/step4.png)",
+      "markdown": "1、首次打開手動安裝的企業級應用時，會看到一個通知，提示該應用的開發者在設備上不受信任。您可以關閉此信息，但您無法打開該應用。\n\n\n![](https://68tt.co/images/enterprise/step1.png)\n\n2、點擊「設置」>「通用」>「描述文件」或「描述文件與設備管理」。在「企業級應用」標題下方，您將看到該開發者的描述文件。\n\n\n![](https://68tt.co/images/enterprise/step2.png)\n\n3、點擊「企業級應用」標題下的開發者描述文件名稱，來針對此開發者建立信任。\n\n\n![](https://68tt.co/images/enterprise/step3.png)\n\n4、根據彈框提示信息，點擊”信任”。返回手機桌面，即可以正常訪問68 App。\n\n\n![](https://68tt.co/images/enterprise/step4.png)",
+      "html": "<!DOCTYPE html><html lang=\"en\">\n\n<body>\n  <div class=\"m-uvl m-uvl-tip\">\n    \n    <div class=\"step-item\">\n      <div class=\"txt\">\n        1、首次打開手動安裝的企業級應用時，會看到一個通知，提示該應用的開發者在設備上不受信任。您可以關閉此信息，但您無法打開該應用。\n      </div>\n      <div class=\"img-box\">\n        <img src=\"https://68tt.co/images/enterprise/step1.png\">\n      </div>\n    </div>\n    <div class=\"step-item\">\n      <div class=\"txt\">\n        2、點擊「設置」&gt;「通用」&gt;「描述文件」或「描述文件與設備管理」。在「企業級應用」標題下方，您將看到該開發者的描述文件。\n      </div>\n      <div class=\"img-box\">\n        <img src=\"https://68tt.co/images/enterprise/step2.png\">\n      </div>\n    </div>\n    <div class=\"step-item\">\n      <div class=\"txt\">\n        3、點擊「企業級應用」標題下的開發者描述文件名稱，來針對此開發者建立信任。\n      </div>\n      <div class=\"img-box\">\n        <img src=\"https://68tt.co/images/enterprise/step3.png\">\n      </div>\n    </div>\n    <div class=\"step-item\">\n      <div class=\"txt\">\n        4、根據彈框提示信息，點擊”信任”。返回手機桌面，即可以正常訪問68 App。\n      </div>\n      <div class=\"img-box\">\n        <img src=\"https://68tt.co/images/enterprise/step4.png\">\n      </div>\n    </div>\n  </div>\n  \n  \n\n\n\n</body></html>",
+      "linksOnPage": [],
+      "metadata": {
+        "title": "68-安全加密即時聊天工具",
+        "favicon": "https://68tt.co/images/favicon.ico",
+        "language": "en",
+        "viewport": "width=device-width,initial-scale=1,user-scalable=no",
+        "scrapeId": "841e5e0e-20ef-4b9b-ae58-e32d3ff41664",
+        "sourceURL": "https://68tt.co/cn/enterprise.html",
+        "url": "https://68tt.co/cn/enterprise.html",
+        "contentType": "text/html",
+        "proxyUsed": "basic",
+        "creditsUsed": 1,
+        "pageStatusCode": 200
+      },
+      "warning": "This scrape job was throttled at your current concurrency limit. If you'd like to scrape faster, you can upgrade your plan."
+    }
+  ],
+  "partial_data": []
+}

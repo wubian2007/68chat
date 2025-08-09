@@ -1,0 +1,77 @@
+{
+  "mcpServers": {
+    "firecrawl": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mendable/firecrawl-mcp-server"
+      ],
+      "env": {
+        "FIRECRAWL_API_KEY": "fc-c6c470036718491484dfa3b5d8c4d14d"
+      }
+    }
+  },
+  "scraping_config": {
+    "target_url": "https://68tt.co/cn/",
+    "crawl_options": {
+      "includes": [
+        "https://68tt.co/"
+      ],
+      "excludes": [
+        "/admin/",
+        "/wp-admin/",
+        ".pdf",
+        ".zip"
+      ],
+      "generateImgAltText": true,
+      "includePaths": [
+        "/",
+        "/about",
+        "/privacy"
+      ],
+      "maxDepth": 2,
+      "limit": 10,
+      "allowBackwardCrawling": false,
+      "allowExternalContentLinks": false
+    },
+    "scrape_options": {
+      "formats": [
+        "markdown",
+        "html",
+        "rawHtml"
+      ],
+      "includeTags": [
+        "title",
+        "meta",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+        "p",
+        "a",
+        "img",
+        "div",
+        "span"
+      ],
+      "excludeTags": [
+        "script",
+        "style",
+        "nav",
+        "footer"
+      ],
+      "onlyMainContent": true,
+      "removeBase64Images": false
+    },
+    "output": {
+      "directory": "./firecrawl_output",
+      "formats": {
+        "save_html": true,
+        "save_markdown": true,
+        "save_json": true,
+        "save_assets": true
+      }
+    }
+  }
+}

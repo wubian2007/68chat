@@ -1,0 +1,41 @@
+{
+  "mcpServers": {
+    "firecrawl": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mendable/firecrawl-mcp-server"
+      ],
+      "env": {
+        "FIRECRAWL_API_KEY": "fc-c6c470036718491484dfa3b5d8c4d14d"
+      }
+    }
+  },
+  "scraping_config": {
+    "target_url": "https://68tt.co/cn/",
+    "crawl_options": {
+      "generateImgAltText": true,
+      "maxDepth": 2,
+      "limit": 5,
+      "allowBackwardCrawling": false,
+      "allowExternalContentLinks": false
+    },
+    "scrape_options": {
+      "formats": [
+        "markdown",
+        "html"
+      ],
+      "onlyMainContent": true,
+      "removeBase64Images": false
+    },
+    "output": {
+      "directory": "./firecrawl_output",
+      "formats": {
+        "save_html": true,
+        "save_markdown": true,
+        "save_json": true,
+        "save_assets": false
+      }
+    }
+  }
+}

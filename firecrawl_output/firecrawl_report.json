@@ -1,0 +1,117 @@
+{
+  "scraping_info": {
+    "tool": "Firecrawl MCP",
+    "target_url": "https://68tt.co/cn/",
+    "timestamp": "2025-08-10 01:45:23",
+    "total_pages": 5,
+    "api_key_used": true
+  },
+  "pages": [
+    {
+      "url": "https://68tt.co/cn/",
+      "title": "68-安全加密即時聊天工具",
+      "metadata": {
+        "viewport": "width=device-width,initial-scale=1,user-scalable=no",
+        "title": "68-安全加密即時聊天工具",
+        "favicon": "https://68tt.co/images/favicon.ico",
+        "language": "zh-CN",
+        "scrapeId": "e52cc199-9237-4d38-9f13-df80f70e3696",
+        "sourceURL": "https://68tt.co/cn/",
+        "url": "https://68tt.co/cn/",
+        "contentType": "text/html",
+        "proxyUsed": "basic",
+        "creditsUsed": 1,
+        "pageStatusCode": 200
+      },
+      "content_length": 1075,
+      "html_length": 4042,
+      "extracted_at": "2025-08-10 01:45:23"
+    },
+    {
+      "url": "https://68tt.co/cn/index.html",
+      "title": "68-安全加密即時聊天工具",
+      "metadata": {
+        "viewport": "width=device-width,initial-scale=1,user-scalable=no",
+        "favicon": "https://68tt.co/images/favicon.ico",
+        "title": "68-安全加密即時聊天工具",
+        "language": "zh-CN",
+        "scrapeId": "c1ed973d-1514-4137-bc7a-b610a2ba972d",
+        "sourceURL": "https://68tt.co/cn/index.html",
+        "url": "https://68tt.co/cn/index.html",
+        "contentType": "text/html",
+        "proxyUsed": "basic",
+        "creditsUsed": 1,
+        "pageStatusCode": 200
+      },
+      "content_length": 1085,
+      "html_length": 4052,
+      "extracted_at": "2025-08-10 01:45:23"
+    },
+    {
+      "url": "https://68tt.co/cn/about.html",
+      "title": "68-安全加密即時聊天工具",
+      "metadata": {
+        "viewport": "width=device-width,initial-scale=1,user-scalable=no",
+        "favicon": "https://68tt.co/images/favicon.ico",
+        "title": "68-安全加密即時聊天工具",
+        "language": "zh-CN",
+        "scrapeId": "a0702973-6bc7-438d-ba47-e1a8ac527f08",
+        "sourceURL": "https://68tt.co/cn/about.html",
+        "url": "https://68tt.co/cn/about.html",
+        "contentType": "text/html",
+        "proxyUsed": "basic",
+        "creditsUsed": 1,
+        "pageStatusCode": 200
+      },
+      "content_length": 130,
+      "html_length": 406,
+      "extracted_at": "2025-08-10 01:45:23"
+    },
+    {
+      "url": "https://68tt.co/cn/privacy.html",
+      "title": "68-安全加密即時聊天工具",
+      "metadata": {
+        "favicon": "https://68tt.co/images/favicon.ico",
+        "viewport": "width=device-width,initial-scale=1,user-scalable=no",
+        "title": "68-安全加密即時聊天工具",
+        "language": "zh-CN",
+        "scrapeId": "2036ce84-032c-4461-9610-eb338e09dc1c",
+        "sourceURL": "https://68tt.co/cn/privacy.html",
+        "url": "https://68tt.co/cn/privacy.html",
+        "contentType": "text/html",
+        "proxyUsed": "basic",
+        "creditsUsed": 1,
+        "pageStatusCode": 200
+      },
+      "content_length": 539,
+      "html_length": 1530,
+      "extracted_at": "2025-08-10 01:45:23"
+    },
+    {
+      "url": "https://68tt.co/cn/enterprise.html",
+      "title": "68-安全加密即時聊天工具",
+      "metadata": {
+        "title": "68-安全加密即時聊天工具",
+        "favicon": "https://68tt.co/images/favicon.ico",
+        "language": "en",
+        "viewport": "width=device-width,initial-scale=1,user-scalable=no",
+        "scrapeId": "841e5e0e-20ef-4b9b-ae58-e32d3ff41664",
+        "sourceURL": "https://68tt.co/cn/enterprise.html",
+        "url": "https://68tt.co/cn/enterprise.html",
+        "contentType": "text/html",
+        "proxyUsed": "basic",
+        "creditsUsed": 1,
+        "pageStatusCode": 200
+      },
+      "content_length": 409,
+      "html_length": 1074,
+      "extracted_at": "2025-08-10 01:45:23"
+    }
+  ],
+  "raw_data_summary": {
+    "total_data_points": 5,
+    "job_status": "completed",
+    "completed": 0,
+    "total": 5
+  }
+}
