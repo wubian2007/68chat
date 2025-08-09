@@ -126,9 +126,12 @@ class FirecrawlMCPClient:
                 "limit": crawl_options.get("limit", 5)
             },
             "pageOptions": {
-                "onlyMainContent": True,
+                "onlyMainContent": False,
                 "includeHtml": True,
-                "screenshot": False
+                "includeRawHtml": True,
+                "screenshot": True,
+                "fullPageScreenshot": True,
+                "waitFor": crawl_options.get("waitFor", 2000)
             }
         }
         
@@ -210,6 +213,12 @@ class FirecrawlMCPClient:
         with open(raw_results_path, 'w', encoding='utf-8') as f:
             json.dump(results_data, f, indent=2, ensure_ascii=False)
         
+        # 创建资源目录
+        assets_dir = self.output_dir / "assets"
+        assets_dir.mkdir(exist_ok=True)
+        screenshots_dir = self.output_dir / "screenshots"
+        screenshots_dir.mkdir(exist_ok=True)
+        
         # 处理每个页面
         processed_pages = []
         
@@ -232,6 +241,27 @@ class FirecrawlMCPClient:
                 md_path = self.output_dir / md_filename
                 with open(md_path, 'w', encoding='utf-8') as f:
                     f.write(page_data["markdown"])
+            
+            # 保存截图
+            if page_data.get("screenshot"):
+                screenshot_filename = self.url_to_filename(url) + "_screenshot.png"
+                screenshot_path = screenshots_dir / screenshot_filename
+                try:
+                    # 截图通常是base64编码
+                    import base64
+                    screenshot_data = page_data["screenshot"]
+                    if screenshot_data.startswith('data:image'):
+                        # 移除data:image/png;base64,前缀
+                        screenshot_data = screenshot_data.split(',')[1]
+                    
+                    with open(screenshot_path, 'wb') as f:
+                        f.write(base64.b64decode(screenshot_data))
+                    print(f"📸 保存截图: {screenshot_filename}")
+                except Exception as e:
+                    print(f"⚠️  截图保存失败 {url}: {e}")
+            
+            # 下载页面中的图片
+            self.download_page_images(page_data, assets_dir, url)
             
             # 保存结构化数据
             page_info = {
@@ -306,6 +336,56 @@ class FirecrawlMCPClient:
         # 生成报告
         self.generate_simple_report(processed_pages)
         return len(processed_pages) > 0
+    
+    def download_page_images(self, page_data, assets_dir, base_url):
+        """下载页面中的图片"""
+        html_content = page_data.get("html", "")
+        if not html_content:
+            return
+        
+        try:
+            from bs4 import BeautifulSoup
+            soup = BeautifulSoup(html_content, 'html.parser')
+            images = soup.find_all('img', src=True)
+            
+            for img in images:
+                img_url = img['src']
+                if img_url.startswith('//'):
+                    img_url = 'https:' + img_url
+                elif img_url.startswith('/'):
+                    img_url = urljoin(base_url, img_url)
+                elif not img_url.startswith('http'):
+                    img_url = urljoin(base_url, img_url)
+                
+                # 跳过base64图片
+                if img_url.startswith('data:'):
+                    continue
+                
+                try:
+                    print(f"📥 下载图片: {img_url}")
+                    response = requests.get(img_url, timeout=30, headers={
+                        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
+                    })
+                    
+                    if response.status_code == 200:
+                        # 生成文件名
+                        img_filename = os.path.basename(urlparse(img_url).path)
+                        if not img_filename or '.' not in img_filename:
+                            img_filename = f"image_{hash(img_url) % 10000}.jpg"
+                        
+                        img_path = assets_dir / img_filename
+                        with open(img_path, 'wb') as f:
+                            f.write(response.content)
+                        
+                        print(f"✅ 图片保存: {img_filename}")
+                    else:
+                        print(f"❌ 图片下载失败: {img_url} (HTTP {response.status_code})")
+                        
+                except Exception as e:
+                    print(f"❌ 图片下载错误 {img_url}: {e}")
+                    
+        except Exception as e:
+            print(f"⚠️  图片提取失败: {e}")
     
     def url_to_filename(self, url):
         """URL转文件名"""
@@ -382,12 +462,30 @@ class FirecrawlMCPClient:
             print("\n🎉 Firecrawl 抓取完成!")
             print(f"📁 结果保存在: {self.output_dir}")
             
-            # 显示输出文件
+            # 显示输出文件统计
             if self.output_dir.exists():
-                files = list(self.output_dir.glob("*"))
-                print(f"\n📄 生成的文件 ({len(files)} 个):")
-                for file in sorted(files):
-                    print(f"   - {file.name}")
+                all_files = list(self.output_dir.rglob("*"))
+                files = [f for f in all_files if f.is_file()]
+                
+                html_files = [f for f in files if f.suffix == '.html']
+                md_files = [f for f in files if f.suffix == '.md']
+                json_files = [f for f in files if f.suffix == '.json']
+                img_files = [f for f in files if f.suffix.lower() in ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg']]
+                screenshot_files = [f for f in files if 'screenshot' in f.name]
+                
+                print(f"\n📊 文件统计:")
+                print(f"   📄 HTML 文件: {len(html_files)} 个")
+                print(f"   📝 Markdown 文件: {len(md_files)} 个")
+                print(f"   📋 JSON 报告: {len(json_files)} 个")
+                print(f"   🖼️  图片文件: {len(img_files)} 个")
+                print(f"   📸 截图文件: {len(screenshot_files)} 个")
+                print(f"   📁 总文件数: {len(files)} 个")
+                
+                print(f"\n📁 目录结构:")
+                for directory in sorted(self.output_dir.iterdir()):
+                    if directory.is_dir():
+                        dir_files = list(directory.glob("*"))
+                        print(f"   📂 {directory.name}/: {len(dir_files)} 个文件")
         else:
             print("\n❌ 抓取失败")
         

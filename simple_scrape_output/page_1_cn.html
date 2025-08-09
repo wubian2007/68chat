@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+      content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="../css/index.css?v=4">
+    <link rel="stylesheet" href="../css/lang.css?v=3">
+    <link rel="icon" href="../images/favicon.ico">
+    <title>68-å®å¨å å¯å³æèå¤©å·¥å·</title>
+  </head>
+
+  <body class="cn">
+    <div class="main-wrapper">
+      <div class="header">
+        <div class="inner"><a href="javascript:;" class="logo"><img
+              src="../images/logo.png"></a>
+          <div class="nav">
+            <a href="./index.html" class="nav-a active"><span>é¦é </span></a>
+            <a href="./about.html" class="nav-a @about"><span>éæ¼</span></a>
+            <a href="./privacy.html" class="nav-a @privacy"><span>é±ç§</span></a>
+            <div class="nav-a language">
+              <span>
+                <div id="language-toggle">ç¹é«ä¸­æ <img src="../images/language.png"
+                    alt>
+                </span>
+              </div>
+              <div id="language-options">
+                <div class="lang-item active" data-lang="cn"
+                  onclick="changeLang('cn','index')">ç¹é«ä¸­æ</div>
+                <div class="lang-item" data-lang="en"
+                  onclick="changeLang('en','index')">English</div>
+                <div class="lang-item" data-lang="vi"
+                  onclick="changeLang('vi','index')">Tiáº¿ng Viá»t</div>
+                <div class="lang-item" data-lang="pt"
+                  onclick="changeLang('pt','index')">PortuguÃªs</div>
+              </div>
+            </div>
+          </div>
+          <!-- H5 -->
+          <a class="phone-language" id="showPopup">
+            <span>ç¹é«ä¸­æ &nbsp;
+              <img src="../images/language.png" alt>
+            </span>
+          </a>
+          <!-- H5è¯­è¨å¼¹çª -->
+          <div id="popupContainer">
+            <div class="popupContent">
+              <h3 class="title">åæèªè¨</h3>
+              <div>
+                <div class="lang-item active" data-lang="cn"
+                  onclick="changeLang('cn','index')">ç¹é«ä¸­æ</div>
+                <div class="lang-item" data-lang="en"
+                  onclick="changeLang('en','index')">English</div>
+                <div class="lang-item" data-lang="vi"
+                  onclick="changeLang('vi','index')">Tiáº¿ng Viá»t</div>
+                <div class="lang-item" data-lang="pt"
+                  onclick="changeLang('pt','index')">PortuguÃªs</div>
+              </div>
+              <button id="closePopup"></button>
+            </div>
+          </div>
+          <div id="openBtn" class="btn">
+            <div class="lcbody">
+              <div class="lcitem top">
+                <div class="rect top"></div>
+              </div>
+              <div class="lcitem center hide">
+                <div class="rect bottom"></div>
+              </div>
+              <div class="lcitem bottom">
+                <div class="rect bottom"></div>
+              </div>
+              <div class="close"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-nav" id="modal">
+        <div class="w-nav-list">
+          <div><a href="./index.html" class="w-nav-a active">é¦é </a></div>
+          <hr>
+          <div><a href="./about.html" class="w-nav-a @about">éæ¼</a></div>
+          <hr>
+          <div><a href="./privacy.html" class="w-nav-a @privacy">é±ç§</a></div>
+        </div>
+        <div class="nav-modal"></div>
+      </div>
+      <div class="up-arrow"><img src="../images/up-arrow.png" alt></div>
+      <div class="banner" id="top">
+        <div class="bg">
+          <div class="headImg"><img src="../images/headImg.png" alt></div>
+          <div class="title">ä¸åå®å¨çç§å¯èå¤©APP</div>
+          <div class="description">68 å°ä»¥å¼ºå¤§çå®å¨æ§å å¯ä¿è­·ä½ çè¨æ¯é±ç§ï¼éè¡¨ç¤ºèåªæ<br>ä½ åå°è©±çå¥½åæææææèå¤©è¨æ¯ã</div>
+        </div>
+      </div>
+      <div class="phone-inner">
+        <div class="download">
+          <div id="ios-box" style="margin-bottom: 20px;">
+            <div class="download-btn text"><a href="./enterprise.html">å°æ¥­çä¸è¼</a></div>
+            <div class="download-btn text" id="ios-btn"><a href="../mobile/index.html">App
+              Storeä¸è¼</a></div>
+          </div>
+          <div id="android-box" style="margin-bottom: 20px;">
+            <div class="download-btn text" id="android-btn"><a id="android_url">åè²»ä¸è¼</a></div>
+            <div class="download-btn text" id="goole-down">Google Playä¸è¼</div>
+          </div>
+        </div>
+      </div>
+      <div class="Index-inner" style="padding-top:50px">
+        <div class="download" id="downloadBox">
+          <div class="box hide">
+            <div class="box-img" id="qrcode"><img
+                src="../images/qrcode-icon.png" class="icons"></div>
+            <div class="box-text">ææQR-CODEä¸è¼APP</div>
+            <p>æ¯æ´iOSãAndroidææ©</p>
+          </div><a
+            id="windows_url"
+            download class="box hide">
+            <div class="box-img downloadhover"><img src="../images/wins.png" alt></div>
+            <div class="box-text">ä¸è¼Windowsç¨å¼</div>
+            <p>ç¸å®¹ Windows 7 åæ´é«çæ¬</p>
+          </a><a id="mac_url"
+            download class="box hide">
+            <div class="box-img downloadhover"><img src="../images/ios.png" alt></div>
+            <div class="box-text">ä¸è¼Macç¨å¼</div>
+            <p>ç¸å®¹ macOS 10.10 åæ´é«çæ¬</p>
+          </a>
+        </div>
+        <div class="block block-hide" id="block-1">
+          <div class="title">å®å¨</div>
+          <div class="description">é»å°é»è¨æ¯å å¯å³è¼¸ï¼ä¿éä½ çé±ç§</div>
+          <div class="Img"></div>
+        </div>
+        <div class="block block-hide" id="block-2">
+          <div class="title">èªç±</div>
+          <div class="description">68å°ä½ çèå¤©æ²æéå¶ï¼è®ä½ å¯ç¡ææ¢è</div>
+          <div class="Img"></div>
+        </div>
+        <div class="block block-hide" id="block-3">
+          <div class="title">å¿«é</div>
+          <div class="description">è¼éãå¿«éå°å³éè¨æ¯ï¼ä¿æé«ææºé</div>
+          <div class="Img"></div>
+        </div>
+        <div class="bottom-Img"><img src="../images/picture.png" alt></div>
+      </div>
+      <div class="fiexd-block">
+        <div class="toTop"><a href="#top"><img src="../images/totop.png" alt></a></div>
+        <div class="qrcode"><img src="../images/qrcode.png" alt>
+          <div class="detail">
+            <div class="text">æQR CODEä¸è¼ "68" APP</div>
+            <div class="img" id="qrcodeBottom"><img src="../images/qricon.png"
+                id="qricon" ; alt></div>
+          </div>
+        </div>
+      </div>
+      <div class="phone-inner bottom-download">
+        <div class="icon"><img src="../images/w-bottom.png" alt></div>
+        <div class="icon-text">68</div>
+        <div class="download">
+          <div class="download-text">æ¯æ´èæãå®åææ©</div>
+          <div class="download-btn"><a href="../download.html">åè²»ä¸è¼</a></div>
+        </div>
+      </div>
+      <div class="footer clearfix">
+        <div class="inner">
+          <div class="footer-logo"><img src="../images/footer-logo.png" alt></div>
+          <div class="footer-content">
+            <div>èç³»æä»¬ï¼admin@68service.net</div>
+            <div>Copyright Â© 2024 Octopus US LLC </div>
+           </div>
+        </div>
+      </div>
+      <script src="../js/jquery.min.js"></script>
+      <script src="../js/jquery.lazyload.min.js"></script>
+      <script>
+    $(function () {
+      $(window).scroll(function (o) {
+        var e = $(window).scrollTop(),
+          n = $(window).height(),
+          a = $(window).width();
+        n < e ? ($(".toTop").removeClass("hide"), 768 < a && $(".header .inner").addClass("rHeight")) : ($(".toTop").addClass("hide"), $(".header .inner").removeClass("rHeight")), navigator.userAgent.match(/mobile/i) && (50 < e ? $(
+          ".up-arrow").fadeOut() : $(".up-arrow").fadeIn())
+      }), $("#openBtn").click(function () {
+        $("body").hasClass("openMenu") ? ($("body").removeClass("openMenu"), $("#openBtn .close").stop().css({
+          opacity: 0
+        }).animate({
+          opacity: 1
+        }, 1e3), $(".nav-modal").stop().fadeOut()) : ($("body").addClass("openMenu"), $("#openBtn .close").stop().css({
+          opacity: 0
+        }).animate({
+          opacity: 1
+        }, 600), $(".nav-modal").stop().fadeIn())
+      }), $(".nav-modal").click(function () {
+        $("body").removeClass("openMenu"), $("#openBtn .close").stop().css({
+          opacity: 0
+        }).animate({
+          opacity: 1
+        }, 1e3), $(".nav-modal").stop().fadeOut()
+      }), document.getElementById("modal").addEventListener("touchmove", function (o) {
+        o.preventDefault()
+      }, !1)
+    })
+  </script>
+    </div>
+    <script src="../js/qrcode.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/lang.js?123"></script>
+    <script src="../js/getUrl.js"></script>
+    <script src="../68.config.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11298569667"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'AW-11298569667');
+
+      $('#goole-down').click(function(){
+        window.location.href = app.android_google_link
+      })
+    </script>
+  </body>
+</html>

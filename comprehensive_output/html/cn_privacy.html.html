@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="../css/privacy.css">
+    <link rel="stylesheet" href="../css/lang.css">
+    <link rel="icon" href="../images/favicon.ico">
+    <title>68-å®å¨å å¯å³æèå¤©å·¥å·</title>
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="header">
+            <div class="inner"><a href="javascript:;" class="logo"><img src="../images/logo.png"></a>
+                <div class="nav">
+                    <a href="./index.html" class="nav-a @home"><span>é¦é </span> </a>
+                    <a href="./about.html" class="nav-a @about"><span>éæ¼</span> </a>
+                    <a href="./privacy.html" class="nav-a active"><span>é±ç§</span> </a>
+                    <div class="nav-a language">
+                        <span>
+                            <div id="language-toggle">ç¹é«ä¸­æ <img src="../images/language.png" alt="">
+                        </span>
+                    </div>
+                    <div id="language-options">
+                        <div class="lang-item active" data-lang="cn" onclick="changeLang('cn','privacy')">ç¹é«ä¸­æ</div>
+                        <div class="lang-item" data-lang="en" onclick="changeLang('en','privacy')">English</div>
+                        <div class="lang-item" data-lang="vi" onclick="changeLang('vi','privacy')">Tiáº¿ng Viá»t</div>
+                        <div class="lang-item" data-lang="pt" onclick="changeLang('pt','privacy')">PortuguÃªs</div>
+                    </div>
+                </div>
+            </div>
+            <!-- H5 -->
+            <a class="phone-language" id="showPopup">
+                <span>ç¹é«ä¸­æ &nbsp;
+                    <img src="../images/language.png" alt="">
+                </span>
+            </a>
+            <!-- H5è¯­è¨å¼¹çª -->
+            <div id="popupContainer">
+                <div class="popupContent">
+                    <h3 class="title">åæèªè¨</h3>
+                    <div>
+                        <div class="lang-item active" data-lang="cn" onclick="changeLang('cn','privacy')">ç¹é«ä¸­æ</div>
+                        <div class="lang-item" data-lang="en" onclick="changeLang('en','privacy')">English</div>
+                        <div class="lang-item" data-lang="vi" onclick="changeLang('vi','privacy')">Tiáº¿ng Viá»t</div>
+                        <div class="lang-item" data-lang="pt" onclick="changeLang('pt','privacy')">PortuguÃªs</div>
+                    </div>
+                    <button id="closePopup"></button>
+                </div>
+            </div>
+            <div id="openBtn" class="btn">
+                <div class="lcbody">
+                    <div class="lcitem top">
+                        <div class="rect top"></div>
+                    </div>
+                    <div class="lcitem center hide">
+                        <div class="rect bottom"></div>
+                    </div>
+                    <div class="lcitem bottom">
+                        <div class="rect bottom"></div>
+                    </div>
+                    <div class="close"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-nav" id="modal">
+        <div class="w-nav-list">
+            <div><a href="./index.html" class="w-nav-a @home">é¦é </a></div>
+            <hr>
+            <div><a href="./about.html" class="w-nav-a @about">éæ¼</a></div>
+            <hr>
+            <div><a href="./privacy.html" class="w-nav-a active">é±ç§</a></div>
+        </div>
+        <div class="nav-modal"></div>
+    </div>
+    <div class="privacy-inner">
+        <div class="title">é±ç§èæ¿ç­</div>
+        <div class="content">
+            <div class="content-title">éæ¼å±äº«æ¸æ</div>
+            <div class="content-description">æåçµä¸èä»»ä½äººåäº«ä½ çæ¸æã </div>
+            <div class="content-title">éæ¼å­å²æ¸æ</div>
+            <div class="content-description">æææ¸æé½ç¶éé«åº¦å å¯å­å²ï¼æ¬å°å·¥ç¨å¸«æç©çå¥ä¾µèåæ¨£ç¡æ³è¨ªåç¨æ¶æ¸æã </div>
+            <div class="content-title">éæ¼ç§è</div>
+            <div class="content-description">
+                ææç§èä¸­çå°è©±ä¿¡æ¯åéè©±é½ä½¿ç¨çç«¯å°ç«¯å å¯ãéæå³èæææ¸æé½åªææ¨åèå¤©å¥½åç¥éï¼å°æ¼æåæä»»ä½äººä¾èªªï¼å¦ææ²æç´æ¥è¨ªåæ¨çè¨­åï¼å°±ç¡æ³äºè§£éäºæ¶æ¯ä¸­ç¼éçå§å®¹ãæåä¸æå°æ¨çç§å¯èå¤©è¨éä¿å­å¨æåçæåå¨ä¸ï¼æåä¹ä¸æå¨ç§å¯èå¤©ä¸­ä¿å­ä»»ä½æ¶æ¯æ¥èªï¼å æ­¤æåç¡æ³å¾ç¥æ¨ééç§å¯èå¤©åèª°ç¼éæ¶æ¯æä½æç¼éæ¶æ¯ã
+            </div>
+            <div class="content-title">éæ¼ç§èä¸­çæä»¶</div>
+            <div class="content-description">
+                ç¶æ¨éé68ç¼éç§çï¼è¦é »ææä»¶ï¼å¨ç¼éä¹åï¼æ¯åé ç®é½æä½¿ç¨æåå¨ä¸ç¥éçå®ç¨å¯é°é²è¡å å¯ï¼ä¸¦å°å¯é°ä¹ç¼éçµ¦æ¨çèå¤©å¥½åï¼ä»å¯ä»¥ä¸è¼ä¸¦è§£å¯è©²æä»¶ãå¾æè¡ä¸è¬ï¼è©²æä»¶ä½æ¼68çä¸åæåå¨ä¸ï¼å®çèµ·ä¾å°±åä¸åé¨æ©çãç¡æ³ç ´è­¯çåå¾ãé¤äºæ¨åæ¨ââçèå¤©å¥½åå¤ï¼æåé½ä¸ç¥ééåé¨æ©æ¸æä»£è¡¨ä»éº¼ï¼æåä¸¦ä¸ç¥éå®å±¬æ¼åªåç¹å®çèå¤©æä»¶ã
+            </div>
+            <div class="content-title">è¯ç¹«äºº</div>
+            <div class="content-description">å¨åæ­¥æ¨çè¯ç¹«äººä¹åï¼æåæå¾µæ±æ¨çåæï¼æåä¸æå­å²éæ¼æ¨çè¯ç¹«äººçå¶ä»æ¸æã </div>
+            <div class="content-title">åªé¤ä¿¡æ¯</div>
+            <div class="content-description">æ¨åªé¤ææå§å®¹é½å°æ°¸ä¹åªé¤ã</div>
+            <div class="content-description">æ´å¤èªªæè«æ¥ç <span><a href="./agreement.html" target="_blank">ç¨æ¶åè­°</a></span>
+            </div>
+        </div>
+    </div>
+    <div class="footer clearfix">
+        <div class="inner">
+            <div class="footer-logo"><img src="../images/footer-logo.png" alt=""></div>
+            <div class="footer-content">
+                <div>èç³»æä»¬ï¼admin@68service.net</div>
+            <div>Copyright Â© 2024 Octopus US LLC </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/lang.js"></script>
+    <script src="../js/jquery.lazyload.min.js"></script>
+    <script>$(function () { $(window).scroll(function (o) { var e = $(window).scrollTop(), n = $(window).height(), a = $(window).width(); n < e ? ($(".toTop").removeClass("hide"), 768 < a && $(".header .inner").addClass("rHeight")) : ($(".toTop").addClass("hide"), $(".header .inner").removeClass("rHeight")), navigator.userAgent.match(/mobile/i) && (50 < e ? $(".up-arrow").fadeOut() : $(".up-arrow").fadeIn()) }), $("#openBtn").click(function () { $("body").hasClass("openMenu") ? ($("body").removeClass("openMenu"), $("#openBtn .close").stop().css({ opacity: 0 }).animate({ opacity: 1 }, 1e3), $(".nav-modal").stop().fadeOut()) : ($("body").addClass("openMenu"), $("#openBtn .close").stop().css({ opacity: 0 }).animate({ opacity: 1 }, 600), $(".nav-modal").stop().fadeIn()) }), $(".nav-modal").click(function () { $("body").removeClass("openMenu"), $("#openBtn .close").stop().css({ opacity: 0 }).animate({ opacity: 1 }, 1e3), $(".nav-modal").stop().fadeOut() }), document.getElementById("modal").addEventListener("touchmove", function (o) { o.preventDefault() }, !1) })</script>
+    </div>
+</body>
+
+</html>

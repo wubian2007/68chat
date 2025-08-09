@@ -12,21 +12,26 @@
     }
   },
   "scraping_config": {
-    "target_url": "https://68tt.co/cn/",
+    "target_url": "https://68tt.co",
     "crawl_options": {
       "generateImgAltText": true,
       "maxDepth": 2,
-      "limit": 5,
+      "limit": 10,
       "allowBackwardCrawling": false,
-      "allowExternalContentLinks": false
+      "allowExternalContentLinks": false,
+      "includeRawHtml": true,
+      "waitFor": 2000
     },
     "scrape_options": {
       "formats": [
         "markdown",
-        "html"
+        "html",
+        "rawHtml"
       ],
-      "onlyMainContent": true,
-      "removeBase64Images": false
+      "onlyMainContent": false,
+      "removeBase64Images": false,
+      "includeImages": true,
+      "includeLinks": true
     },
     "output": {
       "directory": "./firecrawl_output",
@@ -34,7 +39,8 @@
         "save_html": true,
         "save_markdown": true,
         "save_json": true,
-        "save_assets": false
+        "save_assets": true,
+        "save_screenshots": true
       }
     }
   }

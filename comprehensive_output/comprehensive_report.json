@@ -1,0 +1,48 @@
+{
+  "scraping_info": {
+    "tool": "Comprehensive Scraper",
+    "timestamp": "2025-08-10 01:52:38",
+    "total_pages": 4,
+    "total_images": 17,
+    "total_files": 29,
+    "total_size_bytes": 505881
+  },
+  "pages": [
+    {
+      "url": "https://68tt.co/cn/",
+      "title": "68-å®å¨å å¯å³æèå¤©å·¥å·",
+      "content_length": 9801,
+      "images_downloaded": 12
+    },
+    {
+      "url": "https://68tt.co/cn/about.html",
+      "title": "68-å®å¨å å¯å³æèå¤©å·¥å·",
+      "content_length": 6912,
+      "images_downloaded": 0
+    },
+    {
+      "url": "https://68tt.co/cn/privacy.html",
+      "title": "68-å®å¨å å¯å³æèå¤©å·¥å·",
+      "content_length": 7680,
+      "images_downloaded": 0
+    },
+    {
+      "url": "https://68tt.co/cn/enterprise.html",
+      "title": "68-å®å¨å å¯å³æèå¤©å·¥å·",
+      "content_length": 2081,
+      "images_downloaded": 5
+    }
+  ],
+  "file_counts": {
+    "html": 8,
+    "markdown": 4,
+    "images": 17,
+    "total": 29
+  },
+  "directory_structure": {
+    "html": "comprehensive_output/html",
+    "markdown": "comprehensive_output/markdown",
+    "assets": "comprehensive_output/assets",
+    "screenshots": "comprehensive_output/screenshots"
+  }
+}
