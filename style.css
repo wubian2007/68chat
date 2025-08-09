@@ -304,32 +304,260 @@ body {
     text-decoration: underline;
 }
 
-/* Responsive Design */
+/* Mobile Navigation */
+.mobile-nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+    color: #333;
+}
+
+.mobile-nav-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 280px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transition: left 0.3s ease;
+    padding-top: 80px;
+}
+
+.mobile-nav-menu.active {
+    left: 0;
+}
+
+.mobile-nav-menu .nav-link {
+    display: block;
+    padding: 20px 30px;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+.mobile-nav-menu .nav-link:hover {
+    background-color: #f8f9fa;
+    color: #007bff;
+}
+
+.mobile-nav-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+
+.mobile-nav-overlay.active {
+    display: block;
+}
+
+/* Mobile-First Responsive Design */
 @media (max-width: 768px) {
+    /* Header adjustments */
+    .header {
+        position: relative;
+    }
+    
+    .logo img {
+        height: 40px;
+    }
+    
+    /* Mobile Navigation */
+    .nav {
+        padding: 10px 0;
+    }
+    
+    .nav-container {
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .nav-container > a {
+        display: none;
+    }
+    
+    .mobile-nav-toggle {
+        display: block;
+    }
+    
+    /* Language Switch - Mobile Style */
+    .language-switch {
+        text-align: center;
+        padding: 15px 0;
+        background: #f8f9fa;
+        border-bottom: 1px solid #e9ecef;
+    }
+    
+    .language-current {
+        justify-content: center;
+        font-size: 16px;
+        padding: 8px 15px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        display: inline-flex;
+    }
+    
+    .language-dropdown {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 200px;
+        z-index: 1001;
+    }
+    
+    /* Hero Section - Mobile Optimized */
+    .hero {
+        padding: 40px 0;
+        margin-bottom: 30px;
+    }
+    
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        line-height: 1.3;
+        margin-bottom: 15px;
     }
     
     .hero-content p {
         font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        padding: 0 10px;
+    }
+    
+    .hero-image {
+        margin-bottom: 30px;
     }
     
     .hero-image img {
-        max-width: 300px;
+        max-width: 280px;
+        border-radius: 15px;
     }
     
-    .nav-container {
-        flex-direction: column;
-        gap: 20px;
+    /* Download Section - Mobile Stack */
+    .download-section {
+        padding: 30px 15px;
+        margin-bottom: 30px;
+    }
+    
+    .download-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 25px;
     }
     
     .download-buttons {
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .download-btn {
+        padding: 25px 15px;
+    }
+    
+    .download-btn img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .download-btn h3 {
+        font-size: 1.1rem;
+    }
+    
+    .download-link {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+    
+    /* QR Section - Mobile Centered */
+    .qr-section {
+        padding: 30px 15px;
+        margin-bottom: 30px;
+    }
+    
+    .qr-section h2 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+    
+    .qr-section img {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .qr-section p {
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+    
+    .qr-section div a {
+        display: block;
+        margin: 10px 0;
+        font-size: 16px;
+        padding: 10px;
+        background: #f8f9fa;
+        border-radius: 8px;
+        text-decoration: none;
+    }
+    
+    /* Features - Mobile Single Column */
+    .features {
+        padding: 40px 15px;
+        margin-bottom: 30px;
+    }
+    
+    .features h2 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
     }
     
     .features-grid {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 25px;
+    }
+    
+    .feature-item {
+        padding: 25px 15px;
+    }
+    
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .feature-item h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    
+    .feature-item p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+    
+    /* Footer - Mobile Stack */
+    .footer {
+        padding: 30px 0;
+        margin-top: 30px;
+    }
+    
+    .footer p {
+        font-size: 0.9rem;
+        margin: 8px 0;
     }
     
     .container {
@@ -338,17 +566,73 @@ body {
 }
 
 @media (max-width: 480px) {
-    .hero {
-        padding: 60px 0;
+    /* Extra small screens */
+    .hero-content h1 {
+        font-size: 1.6rem;
     }
     
-    .hero-content h1 {
-        font-size: 1.8rem;
+    .hero-content p {
+        font-size: 0.95rem;
+        padding: 0 5px;
+    }
+    
+    .hero-image img {
+        max-width: 250px;
     }
     
     .download-section,
     .features,
     .qr-section {
-        padding: 40px 20px;
+        padding: 25px 10px;
+    }
+    
+    .download-btn {
+        padding: 20px 10px;
+    }
+    
+    .feature-item {
+        padding: 20px 10px;
+    }
+    
+    .container {
+        padding: 0 10px;
+    }
+    
+    /* Touch-friendly buttons */
+    .download-link {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .language-current {
+        min-height: 44px;
+        align-items: center;
+    }
+}
+
+/* Landscape orientation adjustments */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        padding: 30px 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.6rem;
+    }
+    
+    .hero-image img {
+        max-width: 200px;
+    }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero-image img,
+    .qr-section img,
+    .download-btn img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
     }
 }

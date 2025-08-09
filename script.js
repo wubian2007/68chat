@@ -11,6 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // 下载按钮点击事件
     initDownloadButtons();
     
+    // 移动端导航
+    initMobileNavigation();
+    
     // 响应式导航
     initResponsiveNav();
 });
@@ -158,35 +161,102 @@ function showDownloadModal(downloadType) {
     }, 3000);
 }
 
+// 移动端导航功能
+function initMobileNavigation() {
+    const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+    const mobileNavMenu = document.querySelector('.mobile-nav-menu');
+    const mobileNavOverlay = document.querySelector('.mobile-nav-overlay');
+    const navLinks = document.querySelectorAll('.mobile-nav-menu .nav-link');
+    
+    if (!mobileNavToggle || !mobileNavMenu || !mobileNavOverlay) return;
+    
+    // 打开/关闭移动菜单
+    mobileNavToggle.addEventListener('click', function() {
+        toggleMobileMenu();
+    });
+    
+    // 点击遮罩关闭菜单
+    mobileNavOverlay.addEventListener('click', function() {
+        closeMobileMenu();
+    });
+    
+    // 点击菜单链接后关闭菜单
+    navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            closeMobileMenu();
+        });
+    });
+    
+    // 按ESC键关闭菜单
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeMobileMenu();
+        }
+    });
+    
+    function toggleMobileMenu() {
+        const isActive = mobileNavMenu.classList.contains('active');
+        if (isActive) {
+            closeMobileMenu();
+        } else {
+            openMobileMenu();
+        }
+    }
+    
+    function openMobileMenu() {
+        mobileNavMenu.classList.add('active');
+        mobileNavOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden'; // 防止背景滚动
+        mobileNavToggle.innerHTML = '✕';
+        mobileNavToggle.setAttribute('aria-label', '關閉菜單');
+    }
+    
+    function closeMobileMenu() {
+        mobileNavMenu.classList.remove('active');
+        mobileNavOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+        mobileNavToggle.innerHTML = '☰';
+        mobileNavToggle.setAttribute('aria-label', '打開菜單');
+    }
+    
+    // 窗口大小改变时处理菜单状态
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            closeMobileMenu();
+        }
+    });
+}
+
 // 响应式导航
 function initResponsiveNav() {
-    // 在小屏幕上添加移动端菜单功能
-    const nav = document.querySelector('.nav');
-    const navContainer = document.querySelector('.nav-container');
-    
-    if (window.innerWidth <= 768) {
-        // 创建移动端菜单按钮
-        const mobileMenuBtn = document.createElement('button');
-        mobileMenuBtn.innerHTML = '☰';
-        mobileMenuBtn.style.cssText = `
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            display: none;
-        `;
+    // 处理窗口大小变化
+    window.addEventListener('resize', function() {
+        const navContainer = document.querySelector('.nav-container');
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
         
-        // 监听窗口大小变化
-        window.addEventListener('resize', function() {
-            if (window.innerWidth <= 768) {
-                mobileMenuBtn.style.display = 'block';
-                navContainer.style.display = 'none';
-            } else {
-                mobileMenuBtn.style.display = 'none';
-                navContainer.style.display = 'flex';
+        if (window.innerWidth <= 768) {
+            // 移动端：隐藏桌面导航，显示移动按钮
+            if (navContainer) {
+                const desktopLinks = navContainer.querySelectorAll('a');
+                desktopLinks.forEach(link => link.style.display = 'none');
             }
-        });
-    }
+            if (mobileNavToggle) {
+                mobileNavToggle.style.display = 'block';
+            }
+        } else {
+            // 桌面端：显示桌面导航，隐藏移动按钮
+            if (navContainer) {
+                const desktopLinks = navContainer.querySelectorAll('a');
+                desktopLinks.forEach(link => link.style.display = 'block');
+            }
+            if (mobileNavToggle) {
+                mobileNavToggle.style.display = 'none';
+            }
+        }
+    });
+    
+    // 初始化时触发一次
+    window.dispatchEvent(new Event('resize'));
 }
 
 // 添加页面滚动效果

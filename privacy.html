@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>隱私政策 - 68 安全的私密聊天APP</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Header -->
@@ -23,9 +24,21 @@
                 <a href="./index.html">首頁</a>
                 <a href="./about.html">關於</a>
                 <a href="./privacy.html" style="color: #007bff;">隱私</a>
+                <button class="mobile-nav-toggle" aria-label="打開菜單">☰</button>
             </div>
         </div>
     </nav>
+    
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav-overlay"></div>
+    <div class="mobile-nav-menu">
+        <a href="./index.html" class="nav-link">🏠 首頁</a>
+        <a href="./about.html" class="nav-link">ℹ️ 關於</a>
+        <a href="./privacy.html" class="nav-link" style="background-color: #f0f8ff;">🔒 隱私</a>
+        <div style="padding: 20px 30px; border-top: 1px solid #f0f0f0; margin-top: 20px;">
+            <p style="color: #666; font-size: 0.9rem; margin: 0;">68 - 安全的私密聊天</p>
+        </div>
+    </div>
     
     <!-- Language Switch -->
     <div class="container">
