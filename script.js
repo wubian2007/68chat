@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initLanguageSwitch();
     initScrollEffects();
     initDownloadLinks();
+    initMobileOSDetection();
 });
 
 // 移动端菜单功能 - 完全按照原网站
@@ -328,6 +329,43 @@ document.addEventListener('DOMContentLoaded', function() {
 window.addEventListener('error', function(e) {
     console.error('JavaScript error:', e.error);
 });
+
+// 移动端操作系统检测
+function initMobileOSDetection() {
+    const iosBox = document.getElementById('ios-box');
+    const androidBox = document.getElementById('android-box');
+    
+    if (!iosBox || !androidBox) return;
+    
+    // 检测用户设备
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    const isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+    const isAndroid = /android/i.test(userAgent);
+    const isMobile = /mobile/i.test(userAgent) || window.innerWidth <= 768;
+    
+    if (isMobile) {
+        if (isIOS) {
+            // iOS设备 - 显示iOS下载，隐藏Android
+            iosBox.style.display = 'block';
+            androidBox.style.display = 'none';
+            console.log('检测到iOS设备，显示iOS下载选项');
+        } else if (isAndroid) {
+            // Android设备 - 显示Android下载，隐藏iOS
+            iosBox.style.display = 'none';
+            androidBox.style.display = 'block';
+            console.log('检测到Android设备，显示Android下载选项');
+        } else {
+            // 其他移动设备或无法检测 - 显示所有选项
+            iosBox.style.display = 'block';
+            androidBox.style.display = 'block';
+            console.log('无法确定设备类型，显示所有下载选项');
+        }
+    } else {
+        // 桌面设备 - 隐藏移动端下载区域
+        iosBox.style.display = 'none';
+        androidBox.style.display = 'none';
+    }
+}
 
 // 导出全局函数供外部调用
 window.changeLang = changeLang;

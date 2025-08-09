@@ -1,18 +1,18 @@
 {
   "scraping_info": {
     "tool": "Comprehensive Scraper",
-    "timestamp": "2025-08-10 01:52:38",
+    "timestamp": "2025-08-10 02:27:57",
     "total_pages": 4,
-    "total_images": 17,
-    "total_files": 29,
-    "total_size_bytes": 505881
+    "total_images": 35,
+    "total_files": 48,
+    "total_size_bytes": 952939
   },
   "pages": [
     {
       "url": "https://68tt.co/cn/",
       "title": "68-å®å¨å å¯å³æèå¤©å·¥å·",
       "content_length": 9801,
-      "images_downloaded": 12
+      "images_downloaded": 13
     },
     {
       "url": "https://68tt.co/cn/about.html",
@@ -36,8 +36,8 @@
   "file_counts": {
     "html": 8,
     "markdown": 4,
-    "images": 17,
-    "total": 29
+    "images": 35,
+    "total": 48
   },
   "directory_structure": {
     "html": "comprehensive_output/html",
