@@ -2,6 +2,9 @@
 
 // 页面加载完成后执行
 document.addEventListener('DOMContentLoaded', function() {
+    // 移动端布局修复
+    initMobileLayoutFix();
+    
     // 语言切换功能
     initLanguageSwitch();
     
@@ -17,6 +20,115 @@ document.addEventListener('DOMContentLoaded', function() {
     // 响应式导航
     initResponsiveNav();
 });
+
+// 移动端布局修复功能
+function initMobileLayoutFix() {
+    // 检测并修复水平滚动问题
+    function fixHorizontalOverflow() {
+        if (window.innerWidth <= 768) {
+            const body = document.body;
+            const html = document.documentElement;
+            
+            // 确保没有水平滚动
+            body.style.overflowX = 'hidden';
+            html.style.overflowX = 'hidden';
+            
+            // 检查所有可能导致溢出的元素
+            const allElements = document.querySelectorAll('*');
+            allElements.forEach(function(element) {
+                const rect = element.getBoundingClientRect();
+                if (rect.width > window.innerWidth) {
+                    element.style.maxWidth = '100%';
+                    element.style.overflowX = 'hidden';
+                    element.style.boxSizing = 'border-box';
+                }
+            });
+        }
+    }
+    
+    // 修复图片尺寸
+    function fixImageSizes() {
+        const images = document.querySelectorAll('img');
+        images.forEach(function(img) {
+            if (window.innerWidth <= 768) {
+                img.style.maxWidth = '100%';
+                img.style.height = 'auto';
+                img.style.objectFit = 'contain';
+            }
+        });
+    }
+    
+    // 修复视口设置
+    function fixViewport() {
+        let viewport = document.querySelector('meta[name="viewport"]');
+        if (!viewport) {
+            viewport = document.createElement('meta');
+            viewport.name = 'viewport';
+            document.head.appendChild(viewport);
+        }
+        viewport.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+    }
+    
+    // 修复触控区域
+    function fixTouchTargets() {
+        if (window.innerWidth <= 768) {
+            const touchElements = document.querySelectorAll('button, a, input, select, textarea');
+            touchElements.forEach(function(element) {
+                const rect = element.getBoundingClientRect();
+                if (rect.width < 44 || rect.height < 44) {
+                    element.style.minWidth = '44px';
+                    element.style.minHeight = '44px';
+                    element.style.display = 'inline-flex';
+                    element.style.alignItems = 'center';
+                    element.style.justifyContent = 'center';
+                }
+            });
+        }
+    }
+    
+    // 添加移动端专用样式类
+    function addMobileClasses() {
+        if (window.innerWidth <= 768) {
+            document.body.classList.add('mobile-layout');
+        } else {
+            document.body.classList.remove('mobile-layout');
+        }
+        
+        if (window.innerWidth <= 480) {
+            document.body.classList.add('small-mobile');
+        } else {
+            document.body.classList.remove('small-mobile');
+        }
+    }
+    
+    // 初始修复
+    fixViewport();
+    fixHorizontalOverflow();
+    fixImageSizes();
+    fixTouchTargets();
+    addMobileClasses();
+    
+    // 窗口大小改变时重新修复
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+            fixHorizontalOverflow();
+            fixImageSizes();
+            fixTouchTargets();
+            addMobileClasses();
+        }, 250);
+    });
+    
+    // 监听方向改变
+    window.addEventListener('orientationchange', function() {
+        setTimeout(function() {
+            fixHorizontalOverflow();
+            fixImageSizes();
+            addMobileClasses();
+        }, 500);
+    });
+}
 
 // 语言切换功能
 function initLanguageSwitch() {

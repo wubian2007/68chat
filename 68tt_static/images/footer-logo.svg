@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 30" width="80" height="30">
+  <defs>
+    <linearGradient id="footerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ecf0f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bdc3c7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="15" cy="15" r="12" fill="url(#footerGradient)" opacity="0.3"/>
+  
+  <!-- "68" text -->
+  <text x="15" y="21" font-family="Arial, sans-serif" font-size="18" font-weight="bold" 
+        text-anchor="middle" fill="url(#footerGradient)">68</text>
+        
+  <!-- Chat icon -->
+  <path d="M35 10 Q42 8 48 10 Q52 12 48 16 L45 15 L42 18 L39 15 Q35 12 35 10 Z" 
+        fill="url(#footerGradient)" opacity="0.7"/>
+        
+  <!-- Security dots -->
+  <circle cx="60" cy="12" r="1.5" fill="url(#footerGradient)" opacity="0.5"/>
+  <circle cx="65" cy="15" r="1.5" fill="url(#footerGradient)" opacity="0.5"/>
+  <circle cx="70" cy="18" r="1.5" fill="url(#footerGradient)" opacity="0.5"/>
+</svg>

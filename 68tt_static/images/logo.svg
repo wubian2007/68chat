@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="120" height="40">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="20" cy="20" r="18" fill="url(#logoGradient)" opacity="0.1"/>
+  
+  <!-- Main "68" text -->
+  <text x="20" y="28" font-family="Arial, sans-serif" font-size="24" font-weight="bold" 
+        text-anchor="middle" fill="url(#logoGradient)">68</text>
+  
+  <!-- "TT" text -->
+  <text x="65" y="16" font-family="Arial, sans-serif" font-size="14" font-weight="600" 
+        text-anchor="middle" fill="#333">TT</text>
+        
+  <!-- Chat bubble icon -->
+  <path d="M75 22 Q85 18 95 22 Q100 25 95 30 L90 28 L85 32 L80 28 Q75 25 75 22 Z" 
+        fill="url(#logoGradient)" opacity="0.8"/>
+        
+  <!-- Secure lock icon -->
+  <rect x="105" y="24" width="8" height="6" rx="1" fill="url(#logoGradient)" opacity="0.6"/>
+  <path d="M107 24 Q107 21 109 21 Q111 21 111 24" stroke="url(#logoGradient)" 
+        stroke-width="1" fill="none" opacity="0.6"/>
+</svg>
