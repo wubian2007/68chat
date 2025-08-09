@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>68Chat 后台管理面板</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            margin-bottom: 1.5rem;
+        }
+        .card-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px 15px 0 0 !important;
+            border: none;
+            padding: 1rem 1.5rem;
+        }
+        .form-control, .form-select {
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+        }
+        .form-control:focus, .form-select:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            border-radius: 8px;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        .btn-outline-primary {
+            border-color: #667eea;
+            color: #667eea;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+        .btn-outline-primary:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-color: #667eea;
+        }
+        .alert {
+            border-radius: 10px;
+            border: none;
+        }
+        .verification-section {
+            background-color: #fff3cd;
+            border: 2px solid #ffeaa7;
+            border-radius: 10px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        .stats-card {
+            text-align: center;
+            padding: 1.5rem;
+        }
+        .stats-icon {
+            font-size: 2rem;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+        .file-upload-area {
+            border: 2px dashed #dee2e6;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .file-upload-area:hover {
+            border-color: #667eea;
+            background-color: #f8f9ff;
+        }
+        .preview-section {
+            background-color: #e3f2fd;
+            border-radius: 10px;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-gear-fill"></i>
+                68Chat 管理面板
+            </a>
+            <div class="navbar-nav ms-auto">
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        <i class="bi bi-person-circle"></i>
+                        <%= user.username %>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./preview" target="_blank">
+                            <i class="bi bi-eye"></i> 预览前台
+                        </a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <form method="POST" action="./logout" style="display: inline;">
+                                <button type="submit" class="dropdown-item">
+                                    <i class="bi bi-box-arrow-right"></i> 登出
+                                </button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid py-4">
+        <!-- 消息提示 -->
+        <% if (success) { %>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <i class="bi bi-check-circle-fill"></i>
+                <%= success %>
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        <% } %>
+
+        <% if (error) { %>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <i class="bi bi-exclamation-triangle-fill"></i>
+                <%= error %>
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        <% } %>
+
+        <div class="row">
+            <!-- 左侧配置表单 -->
+            <div class="col-lg-8">
+                <% if (config) { %>
+                    <form method="POST" action="./update-config" id="configForm">
+                        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                        
+                        <!-- 网站基本信息 -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0">
+                                    <i class="bi bi-globe"></i>
+                                    网站基本信息
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label for="siteTitle" class="form-label">网站标题</label>
+                                    <input type="text" 
+                                           class="form-control" 
+                                           id="siteTitle" 
+                                           name="site.title" 
+                                           value="<%= config.site.title %>" 
+                                           required 
+                                           maxlength="100">
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="siteDescription" class="form-label">网站描述</label>
+                                    <textarea class="form-control" 
+                                              id="siteDescription" 
+                                              name="site.description" 
+                                              rows="3" 
+                                              required 
+                                              maxlength="500"><%= config.site.description %></textarea>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="siteKeywords" class="form-label">关键词 (用逗号分隔)</label>
+                                    <input type="text" 
+                                           class="form-control" 
+                                           id="siteKeywords" 
+                                           name="site.keywords" 
+                                           value="<%= config.site.keywords %>" 
+                                           maxlength="200">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 下载链接配置 -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0">
+                                    <i class="bi bi-download"></i>
+                                    应用下载链接
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="androidUrl" class="form-label">
+                                            <i class="bi bi-android2"></i> Android 下载链接
+                                        </label>
+                                        <input type="url" 
+                                               class="form-control" 
+                                               id="androidUrl" 
+                                               name="downloads.android.url" 
+                                               value="<%= config.downloads.android.url %>" 
+                                               required>
+                                    </div>
+                                    
+                                    <div class="col-md-6 mb-3">
+                                        <label for="iosUrl" class="form-label">
+                                            <i class="bi bi-apple"></i> iOS 下载链接
+                                        </label>
+                                        <input type="url" 
+                                               class="form-control" 
+                                               id="iosUrl" 
+                                               name="downloads.ios.url" 
+                                               value="<%= config.downloads.ios.url %>" 
+                                               required>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="windowsUrl" class="form-label">
+                                            <i class="bi bi-windows"></i> Windows 下载链接
+                                        </label>
+                                        <input type="url" 
+                                               class="form-control" 
+                                               id="windowsUrl" 
+                                               name="downloads.windows.url" 
+                                               value="<%= config.downloads.windows.url %>" 
+                                               required>
+                                    </div>
+                                    
+                                    <div class="col-md-6 mb-3">
+                                        <label for="macUrl" class="form-label">
+                                            <i class="bi bi-apple"></i> Mac 下载链接
+                                        </label>
+                                        <input type="url" 
+                                               class="form-control" 
+                                               id="macUrl" 
+                                               name="downloads.mac.url" 
+                                               value="<%= config.downloads.mac.url %>" 
+                                               required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 统计代码配置 -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0">
+                                    <i class="bi bi-bar-chart"></i>
+                                    统计代码配置
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="googleAnalyticsId" class="form-label">Google Analytics ID</label>
+                                        <input type="text" 
+                                               class="form-control" 
+                                               id="googleAnalyticsId" 
+                                               name="analytics.google.id" 
+                                               value="<%= config.analytics.google.id %>">
+                                    </div>
+                                    
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-check form-switch mt-4">
+                                            <input class="form-check-input" 
+                                                   type="checkbox" 
+                                                   id="googleAnalyticsEnabled" 
+                                                   name="analytics.google.enabled" 
+                                                   value="true"
+                                                   <%= config.analytics.google.enabled ? 'checked' : '' %>>
+                                            <label class="form-check-label" for="googleAnalyticsEnabled">
+                                                启用 Google Analytics
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="customAnalytics" class="form-label">自定义统计代码</label>
+                                    <textarea class="form-control" 
+                                              id="customAnalytics" 
+                                              name="analytics.custom.code" 
+                                              rows="4" 
+                                              placeholder="在此输入自定义的统计代码..."><%= config.analytics.custom.code %></textarea>
+                                </div>
+                                
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" 
+                                           type="checkbox" 
+                                           id="customAnalyticsEnabled" 
+                                           name="analytics.custom.enabled" 
+                                           value="true"
+                                           <%= config.analytics.custom.enabled ? 'checked' : '' %>>
+                                    <label class="form-check-label" for="customAnalyticsEnabled">
+                                        启用自定义统计代码
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 联系信息 -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0">
+                                    <i class="bi bi-envelope"></i>
+                                    联系信息
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="contactEmail" class="form-label">联系邮箱</label>
+                                        <input type="email" 
+                                               class="form-control" 
+                                               id="contactEmail" 
+                                               name="contact.email" 
+                                               value="<%= config.contact.email %>" 
+                                               required>
+                                    </div>
+                                    
+                                    <div class="col-md-6 mb-3">
+                                        <label for="contactCompany" class="form-label">公司名称</label>
+                                        <input type="text" 
+                                               class="form-control" 
+                                               id="contactCompany" 
+                                               name="contact.company" 
+                                               value="<%= config.contact.company %>">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 安全验证 -->
+                        <div class="verification-section">
+                            <h6><i class="bi bi-shield-check"></i> 安全验证</h6>
+                            <p class="small mb-3">为了确保操作安全，请输入验证码后再提交更改。</p>
+                            <div class="row align-items-end">
+                                <div class="col-md-6">
+                                    <label for="verificationCode" class="form-label">验证码</label>
+                                    <input type="text" 
+                                           class="form-control" 
+                                           id="verificationCode" 
+                                           name="verificationCode" 
+                                           placeholder="点击获取验证码" 
+                                           required>
+                                </div>
+                                <div class="col-md-6">
+                                    <button type="button" 
+                                            class="btn btn-outline-primary" 
+                                            id="getVerificationCode">
+                                        获取验证码
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button type="button" class="btn btn-outline-primary me-md-2" onclick="resetForm()">
+                                <i class="bi bi-arrow-clockwise"></i>
+                                重置
+                            </button>
+                            <button type="submit" class="btn btn-primary" id="submitBtn">
+                                <i class="bi bi-check-lg"></i>
+                                保存配置
+                            </button>
+                        </div>
+                    </form>
+                <% } else { %>
+                    <div class="alert alert-danger">
+                        <i class="bi bi-exclamation-triangle-fill"></i>
+                        配置文件加载失败，请检查 data.json 文件。
+                    </div>
+                <% } %>
+            </div>
+
+            <!-- 右侧工具栏 -->
+            <div class="col-lg-4">
+                <!-- 系统状态 -->
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">
+                            <i class="bi bi-info-circle"></i>
+                            系统状态
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <% if (config) { %>
+                            <div class="stats-card">
+                                <div class="stats-icon">
+                                    <i class="bi bi-check-circle-fill text-success"></i>
+                                </div>
+                                <h6>配置正常</h6>
+                                <small class="text-muted">
+                                    最后更新: <%= new Date(config.lastModified).toLocaleString('zh-CN') %>
+                                </small>
+                            </div>
+                        <% } %>
+                        
+                        <div class="preview-section mt-3">
+                            <h6><i class="bi bi-eye"></i> 实时预览</h6>
+                            <p class="small mb-2">查看修改后的前台效果</p>
+                            <a href="./preview" target="_blank" class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-box-arrow-up-right"></i>
+                                打开前台页面
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Favicon 上传 -->
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">
+                            <i class="bi bi-image"></i>
+                            Favicon 管理
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <form method="POST" action="./upload-favicon" enctype="multipart/form-data">
+                            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                            
+                            <div class="file-upload-area">
+                                <i class="bi bi-cloud-upload display-4 text-muted"></i>
+                                <p class="mt-2 mb-2">上传新的 Favicon</p>
+                                <input type="file" 
+                                       class="form-control" 
+                                       name="favicon" 
+                                       accept=".ico,.png" 
+                                       required>
+                                <small class="text-muted">
+                                    支持 .ico 和 .png 格式，最大 100KB
+                                </small>
+                            </div>
+                            
+                            <div class="d-grid mt-3">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="bi bi-upload"></i>
+                                    上传 Favicon
+                                </button>
+                            </div>
+                        </form>
+                        
+                        <% if (config && config.site.favicon) { %>
+                            <div class="mt-3 text-center">
+                                <small class="text-muted">当前 Favicon:</small><br>
+                                <code><%= config.site.favicon %></code>
+                            </div>
+                        <% } %>
+                    </div>
+                </div>
+
+                <!-- 操作日志 -->
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">
+                            <i class="bi bi-clock-history"></i>
+                            最近操作
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="small">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span><i class="bi bi-person-check"></i> 管理员登录</span>
+                                <span class="text-muted">刚刚</span>
+                            </div>
+                            <% if (config) { %>
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span><i class="bi bi-file-text"></i> 配置加载</span>
+                                    <span class="text-muted">刚刚</span>
+                                </div>
+                            <% } %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // 获取验证码
+        document.getElementById('getVerificationCode').addEventListener('click', async function() {
+            const btn = this;
+            const input = document.getElementById('verificationCode');
+            
+            btn.disabled = true;
+            btn.innerHTML = '<i class="bi bi-hourglass-split"></i> 获取中...';
+            
+            try {
+                const response = await fetch('./verification-code');
+                const data = await response.json();
+                
+                input.value = data.code;
+                input.focus();
+                
+                btn.innerHTML = '<i class="bi bi-check-lg"></i> 已获取';
+                setTimeout(() => {
+                    btn.disabled = false;
+                    btn.innerHTML = '获取验证码';
+                }, 3000);
+                
+            } catch (error) {
+                btn.innerHTML = '<i class="bi bi-x-lg"></i> 获取失败';
+                setTimeout(() => {
+                    btn.disabled = false;
+                    btn.innerHTML = '获取验证码';
+                }, 3000);
+            }
+        });
+
+        // 表单提交处理
+        document.getElementById('configForm').addEventListener('submit', function() {
+            const submitBtn = document.getElementById('submitBtn');
+            submitBtn.innerHTML = '<i class="bi bi-hourglass-split"></i> 保存中...';
+            submitBtn.disabled = true;
+        });
+
+        // 重置表单
+        function resetForm() {
+            if (confirm('确定要重置所有更改吗？')) {
+                document.getElementById('configForm').reset();
+                document.getElementById('verificationCode').value = '';
+            }
+        }
+
+        // 文件上传预览
+        document.querySelector('input[name="favicon"]').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const fileSize = (file.size / 1024).toFixed(2);
+                const uploadArea = document.querySelector('.file-upload-area');
+                uploadArea.innerHTML = `
+                    <i class="bi bi-file-earmark-image display-4 text-success"></i>
+                    <p class="mt-2 mb-0"><strong>${file.name}</strong></p>
+                    <small class="text-muted">${fileSize} KB</small>
+                `;
+            }
+        });
+
+        // 自动保存草稿 (可选功能)
+        let autoSaveTimer;
+        const formInputs = document.querySelectorAll('#configForm input, #configForm textarea');
+        
+        formInputs.forEach(input => {
+            input.addEventListener('input', function() {
+                clearTimeout(autoSaveTimer);
+                autoSaveTimer = setTimeout(() => {
+                    // 这里可以实现自动保存草稿的功能
+                    console.log('自动保存草稿...');
+                }, 5000);
+            });
+        });
+
+        // 页面离开提醒
+        let formChanged = false;
+        formInputs.forEach(input => {
+            input.addEventListener('change', () => {
+                formChanged = true;
+            });
+        });
+
+        window.addEventListener('beforeunload', function(e) {
+            if (formChanged) {
+                e.preventDefault();
+                e.returnValue = '您有未保存的更改，确定要离开吗？';
+                return e.returnValue;
+            }
+        });
+
+        // 表单提交后重置标记
+        document.getElementById('configForm').addEventListener('submit', function() {
+            formChanged = false;
+        });
+    </script>
+</body>
+</html>

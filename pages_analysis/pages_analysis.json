@@ -1,0 +1,594 @@
+{
+  "about": {
+    "desktop": {
+      "title": "68-å®å¨å å¯å³æèå¤©å·¥å·",
+      "body_class": [],
+      "main_content": [],
+      "images": [],
+      "text_sections": [
+        {
+          "tag": "div",
+          "class": [
+            "description"
+          ],
+          "text": "\"68\"æ¯ä¸æ¬¾æ³¨éå®å¨åé±ç§çå³æéè¨è»é«ãå®éå¸¸å¿«éãç°¡å®ãå®å¨ï¼ç¨æ·å¯ç¼éç¡ééçè¨æ¯ãç§çï¼ç¨ä¾å¹«å©ä»åä¿æé«æççæºéãä¿¡æ¯æ°¾æ¿«çæ",
+          "parent_class": [
+            "about-inner"
+          ]
+        },
+        {
+          "tag": "div",
+          "class": [],
+          "text": "èç³»æä»¬ï¼admin@68service.net",
+          "parent_class": [
+            "footer-content"
+          ]
+        },
+        {
+          "tag": "div",
+          "class": [],
+          "text": "Copyright Â© 2024 Octopus US LLC",
+          "parent_class": [
+            "footer-content"
+          ]
+        }
+      ],
+      "special_elements": [
+        {
+          "selector": "div[class*=\"about\"]",
+          "tag": "div",
+          "classes": [
+            "about-inner"
+          ],
+          "id": "",
+          "text_preview": "éæ¼æä»¬\"68\"æ¯ä¸æ¬¾æ³¨éå®å¨åé±ç§çå³æéè¨è»é«ãå®éå¸¸å¿«éãç°¡å®ãå®"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "footer-content"
+          ],
+          "id": "",
+          "text_preview": "èç³»æä»¬ï¼admin@68service.netCopyright Â© 2024 Octopus US LLC"
+        }
+      ]
+    },
+    "mobile": {
+      "title": "68-å®å¨å å¯å³æèå¤©å·¥å·",
+      "body_class": [],
+      "main_content": [],
+      "images": [],
+      "text_sections": [
+        {
+          "tag": "div",
+          "class": [
+            "description"
+          ],
+          "text": "\"68\"æ¯ä¸æ¬¾æ³¨éå®å¨åé±ç§çå³æéè¨è»é«ãå®éå¸¸å¿«éãç°¡å®ãå®å¨ï¼ç¨æ·å¯ç¼éç¡ééçè¨æ¯ãç§çï¼ç¨ä¾å¹«å©ä»åä¿æé«æççæºéãä¿¡æ¯æ°¾æ¿«çæ",
+          "parent_class": [
+            "about-inner"
+          ]
+        },
+        {
+          "tag": "div",
+          "class": [],
+          "text": "èç³»æä»¬ï¼admin@68service.net",
+          "parent_class": [
+            "footer-content"
+          ]
+        },
+        {
+          "tag": "div",
+          "class": [],
+          "text": "Copyright Â© 2024 Octopus US LLC",
+          "parent_class": [
+            "footer-content"
+          ]
+        }
+      ],
+      "special_elements": [
+        {
+          "selector": "div[class*=\"about\"]",
+          "tag": "div",
+          "classes": [
+            "about-inner"
+          ],
+          "id": "",
+          "text_preview": "éæ¼æä»¬\"68\"æ¯ä¸æ¬¾æ³¨éå®å¨åé±ç§çå³æéè¨è»é«ãå®éå¸¸å¿«éãç°¡å®ãå®"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "footer-content"
+          ],
+          "id": "",
+          "text_preview": "èç³»æä»¬ï¼admin@68service.netCopyright Â© 2024 Octopus US LLC"
+        }
+      ]
+    }
+  },
+  "privacy": {
+    "desktop": {
+      "title": "68-å®å¨å å¯å³æèå¤©å·¥å·",
+      "body_class": [],
+      "main_content": [],
+      "images": [],
+      "text_sections": [
+        {
+          "tag": "div",
+          "class": [
+            "content-description"
+          ],
+          "text": "æåçµä¸èä»»ä½äººåäº«ä½ çæ¸æã",
+          "parent_class": [
+            "content"
+          ]
+        },
+        {
+          "tag": "div",
+          "class": [
+            "content-description"
+          ],
+          "text": "æææ¸æé½ç¶éé«åº¦å å¯å­å²ï¼æ¬å°å·¥ç¨å¸«æç©çå¥ä¾µèåæ¨£ç¡æ³è¨ªåç¨æ¶æ¸æã",
+          "parent_class": [
+            "content"
+          ]
+        },
+        {
+          "tag": "div",
+          "class": [
+            "content-description"
+          ],
+          "text": "ææç§èä¸­çå°è©±ä¿¡æ¯åéè©±é½ä½¿ç¨çç«¯å°ç«¯å å¯ãéæå³èæææ¸æé½åªææ¨åèå¤©å¥½åç¥éï¼å°æ¼æåæä»»ä½äººä¾èªªï¼å¦ææ²æç´æ¥è¨ªåæ¨çè¨­åï¼",
+          "parent_class": [
+            "content"
+          ]
+        },
+        {
+          "tag": "div",
+          "class": [
+            "content-title"
+          ],
+          "text": "éæ¼ç§èä¸­çæä»¶",
+          "parent_class": [
+            "content"
+          ]
+        },
+        {
+          "tag": "div",
+          "class": [
+            "content-description"
+          ],
+          "text": "ç¶æ¨éé68ç¼éç§çï¼è¦é »ææä»¶ï¼å¨ç¼éä¹åï¼æ¯åé ç®é½æä½¿ç¨æåå¨ä¸ç¥éçå®ç¨å¯é°é²è¡å å¯ï¼ä¸¦å°å¯é°ä¹ç¼éçµ¦æ¨çèå¤©å¥½åï¼ä»å¯ä»¥ä¸è¼ä¸¦",
+          "parent_class": [
+            "content"
+          ]
+        },
+        {
+          "tag": "div",
+          "class": [
+            "content-description"
+          ],
+          "text": "å¨åæ­¥æ¨çè¯ç¹«äººä¹åï¼æåæå¾µæ±æ¨çåæï¼æåä¸æå­å²éæ¼æ¨çè¯ç¹«äººçå¶ä»æ¸æã",
+          "parent_class": [
+            "content"
+          ]
+        },
+        {
+          "tag": "div",
+          "class": [
+            "content-description"
+          ],
+          "text": "æ¨åªé¤ææå§å®¹é½å°æ°¸ä¹åªé¤ã",
+          "parent_class": [
+            "content"
+          ]
+        },
+        {
+          "tag": "div",
+          "class": [],
+          "text": "èç³»æä»¬ï¼admin@68service.net",
+          "parent_class": [
+            "footer-content"
+          ]
+        },
+        {
+          "tag": "div",
+          "class": [],
+          "text": "Copyright Â© 2024 Octopus US LLC",
+          "parent_class": [
+            "footer-content"
+          ]
+        }
+      ],
+      "special_elements": [
+        {
+          "selector": "div[class*=\"privacy\"]",
+          "tag": "div",
+          "classes": [
+            "privacy-inner"
+          ],
+          "id": "",
+          "text_preview": "é±ç§èæ¿ç­éæ¼å±äº«æ¸ææåçµä¸èä»»ä½äººåäº«ä½ çæ¸æãéæ¼å­å²æ¸æææ"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content"
+          ],
+          "id": "",
+          "text_preview": "éæ¼å±äº«æ¸ææåçµä¸èä»»ä½äººåäº«ä½ çæ¸æãéæ¼å­å²æ¸ææææ¸æé½ç¶é"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content-title"
+          ],
+          "id": "",
+          "text_preview": "éæ¼å±äº«æ¸æ"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content-description"
+          ],
+          "id": "",
+          "text_preview": "æåçµä¸èä»»ä½äººåäº«ä½ çæ¸æã"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content-title"
+          ],
+          "id": "",
+          "text_preview": "éæ¼å­å²æ¸æ"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content-description"
+          ],
+          "id": "",
+          "text_preview": "æææ¸æé½ç¶éé«åº¦å å¯å­å²ï¼æ¬å°å·¥ç¨å¸«æç©çå¥ä¾µèåæ¨£ç¡æ³è¨ªåç¨æ¶æ"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content-title"
+          ],
+          "id": "",
+          "text_preview": "éæ¼ç§è"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content-description"
+          ],
+          "id": "",
+          "text_preview": "ææç§èä¸­çå°è©±ä¿¡æ¯åéè©±é½ä½¿ç¨çç«¯å°ç«¯å å¯ãéæå³èæææ¸æé½åªæ"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content-title"
+          ],
+          "id": "",
+          "text_preview": "éæ¼ç§èä¸­çæä»¶"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content-description"
+          ],
+          "id": "",
+          "text_preview": "ç¶æ¨éé68ç¼éç§çï¼è¦é »ææä»¶ï¼å¨ç¼éä¹åï¼æ¯åé ç®é½æä½¿ç¨æåå¨ä¸"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content-title"
+          ],
+          "id": "",
+          "text_preview": "è¯ç¹«äºº"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content-description"
+          ],
+          "id": "",
+          "text_preview": "å¨åæ­¥æ¨çè¯ç¹«äººä¹åï¼æåæå¾µæ±æ¨çåæï¼æåä¸æå­å²éæ¼æ¨çè¯ç¹«ä"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content-title"
+          ],
+          "id": "",
+          "text_preview": "åªé¤ä¿¡æ¯"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content-description"
+          ],
+          "id": "",
+          "text_preview": "æ¨åªé¤ææå§å®¹é½å°æ°¸ä¹åªé¤ã"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content-description"
+          ],
+          "id": "",
+          "text_preview": "æ´å¤èªªæè«æ¥çç¨æ¶åè­°"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "footer-content"
+          ],
+          "id": "",
+          "text_preview": "èç³»æä»¬ï¼admin@68service.netCopyright Â© 2024 Octopus US LLC"
+        }
+      ]
+    },
+    "mobile": {
+      "title": "68-å®å¨å å¯å³æèå¤©å·¥å·",
+      "body_class": [],
+      "main_content": [],
+      "images": [],
+      "text_sections": [
+        {
+          "tag": "div",
+          "class": [
+            "content-description"
+          ],
+          "text": "æåçµä¸èä»»ä½äººåäº«ä½ çæ¸æã",
+          "parent_class": [
+            "content"
+          ]
+        },
+        {
+          "tag": "div",
+          "class": [
+            "content-description"
+          ],
+          "text": "æææ¸æé½ç¶éé«åº¦å å¯å­å²ï¼æ¬å°å·¥ç¨å¸«æç©çå¥ä¾µèåæ¨£ç¡æ³è¨ªåç¨æ¶æ¸æã",
+          "parent_class": [
+            "content"
+          ]
+        },
+        {
+          "tag": "div",
+          "class": [
+            "content-description"
+          ],
+          "text": "ææç§èä¸­çå°è©±ä¿¡æ¯åéè©±é½ä½¿ç¨çç«¯å°ç«¯å å¯ãéæå³èæææ¸æé½åªææ¨åèå¤©å¥½åç¥éï¼å°æ¼æåæä»»ä½äººä¾èªªï¼å¦ææ²æç´æ¥è¨ªåæ¨çè¨­åï¼",
+          "parent_class": [
+            "content"
+          ]
+        },
+        {
+          "tag": "div",
+          "class": [
+            "content-title"
+          ],
+          "text": "éæ¼ç§èä¸­çæä»¶",
+          "parent_class": [
+            "content"
+          ]
+        },
+        {
+          "tag": "div",
+          "class": [
+            "content-description"
+          ],
+          "text": "ç¶æ¨éé68ç¼éç§çï¼è¦é »ææä»¶ï¼å¨ç¼éä¹åï¼æ¯åé ç®é½æä½¿ç¨æåå¨ä¸ç¥éçå®ç¨å¯é°é²è¡å å¯ï¼ä¸¦å°å¯é°ä¹ç¼éçµ¦æ¨çèå¤©å¥½åï¼ä»å¯ä»¥ä¸è¼ä¸¦",
+          "parent_class": [
+            "content"
+          ]
+        },
+        {
+          "tag": "div",
+          "class": [
+            "content-description"
+          ],
+          "text": "å¨åæ­¥æ¨çè¯ç¹«äººä¹åï¼æåæå¾µæ±æ¨çåæï¼æåä¸æå­å²éæ¼æ¨çè¯ç¹«äººçå¶ä»æ¸æã",
+          "parent_class": [
+            "content"
+          ]
+        },
+        {
+          "tag": "div",
+          "class": [
+            "content-description"
+          ],
+          "text": "æ¨åªé¤ææå§å®¹é½å°æ°¸ä¹åªé¤ã",
+          "parent_class": [
+            "content"
+          ]
+        },
+        {
+          "tag": "div",
+          "class": [],
+          "text": "èç³»æä»¬ï¼admin@68service.net",
+          "parent_class": [
+            "footer-content"
+          ]
+        },
+        {
+          "tag": "div",
+          "class": [],
+          "text": "Copyright Â© 2024 Octopus US LLC",
+          "parent_class": [
+            "footer-content"
+          ]
+        }
+      ],
+      "special_elements": [
+        {
+          "selector": "div[class*=\"privacy\"]",
+          "tag": "div",
+          "classes": [
+            "privacy-inner"
+          ],
+          "id": "",
+          "text_preview": "é±ç§èæ¿ç­éæ¼å±äº«æ¸ææåçµä¸èä»»ä½äººåäº«ä½ çæ¸æãéæ¼å­å²æ¸æææ"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content"
+          ],
+          "id": "",
+          "text_preview": "éæ¼å±äº«æ¸ææåçµä¸èä»»ä½äººåäº«ä½ çæ¸æãéæ¼å­å²æ¸ææææ¸æé½ç¶é"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content-title"
+          ],
+          "id": "",
+          "text_preview": "éæ¼å±äº«æ¸æ"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content-description"
+          ],
+          "id": "",
+          "text_preview": "æåçµä¸èä»»ä½äººåäº«ä½ çæ¸æã"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content-title"
+          ],
+          "id": "",
+          "text_preview": "éæ¼å­å²æ¸æ"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content-description"
+          ],
+          "id": "",
+          "text_preview": "æææ¸æé½ç¶éé«åº¦å å¯å­å²ï¼æ¬å°å·¥ç¨å¸«æç©çå¥ä¾µèåæ¨£ç¡æ³è¨ªåç¨æ¶æ"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content-title"
+          ],
+          "id": "",
+          "text_preview": "éæ¼ç§è"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content-description"
+          ],
+          "id": "",
+          "text_preview": "ææç§èä¸­çå°è©±ä¿¡æ¯åéè©±é½ä½¿ç¨çç«¯å°ç«¯å å¯ãéæå³èæææ¸æé½åªæ"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content-title"
+          ],
+          "id": "",
+          "text_preview": "éæ¼ç§èä¸­çæä»¶"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content-description"
+          ],
+          "id": "",
+          "text_preview": "ç¶æ¨éé68ç¼éç§çï¼è¦é »ææä»¶ï¼å¨ç¼éä¹åï¼æ¯åé ç®é½æä½¿ç¨æåå¨ä¸"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content-title"
+          ],
+          "id": "",
+          "text_preview": "è¯ç¹«äºº"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content-description"
+          ],
+          "id": "",
+          "text_preview": "å¨åæ­¥æ¨çè¯ç¹«äººä¹åï¼æåæå¾µæ±æ¨çåæï¼æåä¸æå­å²éæ¼æ¨çè¯ç¹«ä"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content-title"
+          ],
+          "id": "",
+          "text_preview": "åªé¤ä¿¡æ¯"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content-description"
+          ],
+          "id": "",
+          "text_preview": "æ¨åªé¤ææå§å®¹é½å°æ°¸ä¹åªé¤ã"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "content-description"
+          ],
+          "id": "",
+          "text_preview": "æ´å¤èªªæè«æ¥çç¨æ¶åè­°"
+        },
+        {
+          "selector": "div[class*=\"content\"]",
+          "tag": "div",
+          "classes": [
+            "footer-content"
+          ],
+          "id": "",
+          "text_preview": "èç³»æä»¬ï¼admin@68service.netCopyright Â© 2024 Octopus US LLC"
+        }
+      ]
+    }
+  }
+}

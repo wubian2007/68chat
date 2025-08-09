@@ -1,0 +1,148 @@
+{
+  "title": "68-å®å¨å å¯å³æèå¤©å·¥å·",
+  "phone_inner_sections": [
+    {
+      "index": 1,
+      "classes": [
+        "phone-inner"
+      ],
+      "html": "<div class=\"phone-inner\">\n<div class=\"download\">\n<div id=\"ios-box\" style=\"margin-bottom: 20px;\">\n<div class=\"download-btn text\"><a href=\"./enterprise.html\">å°æ¥­çä¸è¼</a></div>\n<div class=\"download-btn text\" id=\"ios-btn\"><a href=\"../mobile/index.html\">App\n              Storeä¸è¼</a></div>\n</div>\n<div id=\"android-box\" style=\"margin-bottom: 20px;\">\n<div class=\"download-btn text\" id=\"android-btn\"><a id=\"android_url\">åè²»ä¸è¼</a></div>\n<div class=\"download-btn text\" id=\"goole-down\">Google Playä¸è¼</div>\n</div>\n</div>\n</div>",
+      "text_content": "Google Playä¸è¼",
+      "images": [],
+      "buttons": [],
+      "structure": []
+    },
+    {
+      "index": 2,
+      "classes": [
+        "phone-inner",
+        "bottom-download"
+      ],
+      "html": "<div class=\"phone-inner bottom-download\">\n<div class=\"icon\"><img alt=\"\" src=\"../images/w-bottom.png\"/></div>\n<div class=\"icon-text\">68</div>\n<div class=\"download\">\n<div class=\"download-text\">æ¯æ´èæãå®åææ©</div>\n<div class=\"download-btn\"><a href=\"../download.html\">åè²»ä¸è¼</a></div>\n</div>\n</div>",
+      "text_content": "åè²»ä¸è¼",
+      "images": [
+        {
+          "src": "../images/w-bottom.png",
+          "alt": "",
+          "class": []
+        }
+      ],
+      "buttons": [],
+      "structure": []
+    }
+  ],
+  "mobile_specific_content": [],
+  "images": [
+    {
+      "src": "../images/logo.png",
+      "alt": "",
+      "class": [],
+      "parent_class": [
+        "logo"
+      ]
+    },
+    {
+      "src": "../images/language.png",
+      "alt": "",
+      "class": [],
+      "parent_class": []
+    },
+    {
+      "src": "../images/language.png",
+      "alt": "",
+      "class": [],
+      "parent_class": []
+    },
+    {
+      "src": "../images/up-arrow.png",
+      "alt": "",
+      "class": [],
+      "parent_class": [
+        "up-arrow"
+      ]
+    },
+    {
+      "src": "../images/headImg.png",
+      "alt": "",
+      "class": [],
+      "parent_class": [
+        "headImg"
+      ]
+    },
+    {
+      "src": "../images/qrcode-icon.png",
+      "alt": "",
+      "class": [
+        "icons"
+      ],
+      "parent_class": [
+        "box-img"
+      ]
+    },
+    {
+      "src": "../images/wins.png",
+      "alt": "",
+      "class": [],
+      "parent_class": [
+        "box-img",
+        "downloadhover"
+      ]
+    },
+    {
+      "src": "../images/ios.png",
+      "alt": "",
+      "class": [],
+      "parent_class": [
+        "box-img",
+        "downloadhover"
+      ]
+    },
+    {
+      "src": "../images/picture.png",
+      "alt": "",
+      "class": [],
+      "parent_class": [
+        "bottom-Img"
+      ]
+    },
+    {
+      "src": "../images/totop.png",
+      "alt": "",
+      "class": [],
+      "parent_class": []
+    },
+    {
+      "src": "../images/qrcode.png",
+      "alt": "",
+      "class": [],
+      "parent_class": [
+        "qrcode"
+      ]
+    },
+    {
+      "src": "../images/qricon.png",
+      "alt": "",
+      "class": [],
+      "parent_class": [
+        "img"
+      ]
+    },
+    {
+      "src": "../images/w-bottom.png",
+      "alt": "",
+      "class": [],
+      "parent_class": [
+        "icon"
+      ]
+    },
+    {
+      "src": "../images/footer-logo.png",
+      "alt": "",
+      "class": [],
+      "parent_class": [
+        "footer-logo"
+      ]
+    }
+  ],
+  "text_content": []
+}

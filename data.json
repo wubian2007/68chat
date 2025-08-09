@@ -1,0 +1,42 @@
+{
+  "site": {
+    "title": "68-安全加密即時聊天工具",
+    "description": "68是一款注重安全和隱私的即時通訊軟體。它非常快速、簡單、安全，用戶可發送無限量的訊息、照片，用以幫助他們保持高效的溝通。",
+    "keywords": "68chat, 加密聊天, 即時通訊, 安全通訊, 隱私保護, 聊天軟體",
+    "favicon": "68tt_static/images/favicon.ico"
+  },
+  "downloads": {
+    "android": {
+      "url": "https://example.com/android-download",
+      "version": "1.0.0"
+    },
+    "ios": {
+      "url": "https://example.com/ios-download", 
+      "version": "1.0.0"
+    },
+    "windows": {
+      "url": "https://example.com/windows-download",
+      "version": "1.0.0"
+    },
+    "mac": {
+      "url": "https://example.com/mac-download",
+      "version": "1.0.0"
+    }
+  },
+  "analytics": {
+    "google": {
+      "id": "AW-11298569667",
+      "enabled": true
+    },
+    "custom": {
+      "code": "",
+      "enabled": false
+    }
+  },
+  "contact": {
+    "email": "admin@68service.net",
+    "company": "Octopus US LLC"
+  },
+  "lastModified": "2024-01-01T00:00:00.000Z",
+  "version": "1.0.0"
+}

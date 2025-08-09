@@ -1,0 +1,172 @@
+{
+  "desktop": {
+    "headimg_found": true,
+    "headimg_src": "../images/headImg.png",
+    "headimg_alt": "",
+    "headimg_style": "",
+    "container_class": [
+      "headImg"
+    ],
+    "container_style": "",
+    "parent_elements": [
+      {
+        "level": 1,
+        "tag": "div",
+        "class": [
+          "headImg"
+        ],
+        "id": "",
+        "style": "",
+        "computed_styles": {}
+      },
+      {
+        "level": 2,
+        "tag": "div",
+        "class": [
+          "bg"
+        ],
+        "id": "",
+        "style": "",
+        "computed_styles": {}
+      },
+      {
+        "level": 3,
+        "tag": "div",
+        "class": [
+          "banner"
+        ],
+        "id": "top",
+        "style": "",
+        "computed_styles": {}
+      },
+      {
+        "level": 4,
+        "tag": "body",
+        "class": [
+          "cn"
+        ],
+        "id": "",
+        "style": "",
+        "computed_styles": {}
+      },
+      {
+        "level": 5,
+        "tag": "html",
+        "class": [],
+        "id": "",
+        "style": "",
+        "computed_styles": {}
+      }
+    ]
+  },
+  "mobile": {
+    "headimg_found": true,
+    "headimg_src": "../images/headImg.png",
+    "headimg_alt": "",
+    "headimg_style": "",
+    "container_class": [
+      "headImg"
+    ],
+    "container_style": "",
+    "parent_elements": [
+      {
+        "level": 1,
+        "tag": "div",
+        "class": [
+          "headImg"
+        ],
+        "id": "",
+        "style": "",
+        "computed_styles": {}
+      },
+      {
+        "level": 2,
+        "tag": "div",
+        "class": [
+          "bg"
+        ],
+        "id": "",
+        "style": "",
+        "computed_styles": {}
+      },
+      {
+        "level": 3,
+        "tag": "div",
+        "class": [
+          "banner"
+        ],
+        "id": "top",
+        "style": "",
+        "computed_styles": {}
+      },
+      {
+        "level": 4,
+        "tag": "body",
+        "class": [
+          "cn"
+        ],
+        "id": "",
+        "style": "",
+        "computed_styles": {}
+      },
+      {
+        "level": 5,
+        "tag": "html",
+        "class": [],
+        "id": "",
+        "style": "",
+        "computed_styles": {}
+      }
+    ]
+  },
+  "css_analysis": {
+    "https://68tt.co/css/index.css": {
+      "headImg_styles": [
+        ".headImg {\n  width: 120px;\n  margin: 37.7px auto 0;\n}",
+        ".headImg img {\n  width: 100%;\n}",
+        ".headImg {\n    width: 1.24rem;\n    height: 1.38rem;\n    margin: 1.01rem auto 0;\n  }"
+      ],
+      "headImg_img_styles": [
+        ".headImg img {\n  width: 100%;\n}"
+      ],
+      "banner_styles": [
+        ".banner {\n  background: #0084fe;\n  height: 588px;\n  width: 100%;\n  min-width: 1200px;\n  padding-top: 150px;\n  position: relative;\n}",
+        ".banner .bg {\n  width: 1200px;\n  height: 500px;\n  margin: 0 auto;\n  overflow: hidden;\n  text-align: center;\n  background: url(../images/banner.png) center no-repeat;\n}",
+        ".banner .bg .headImg {\n  width: 120px;\n  margin: 37.7px auto 0;\n}",
+        ".banner .bg .headImg img {\n  width: 100%;\n}",
+        ".banner .bg .title {\n  margin-top: 40px;\n  font-size: 56px;\n  color: #fff;\n  line-height: 87px;\n  font-weight: 700;\n}",
+        ".banner .bg .description {\n  color: #fff;\n  line-height: 25px;\n  margin-top: 8px;\n  font-size: 18px;\n}",
+        ".banner .bg .title {\n  font-size: 48px;\n  margin-top: 48px;\n}",
+        ".banner .bg .description {\n  font-size: 14px;\n}",
+        ".banner {\n    height: 6.5rem;\n    min-width: auto;\n    padding-top: 1rem;\n  }",
+        ".banner .bg {\n    height: 5.5rem;\n    width: 6.4rem;\n    text-align: center;\n    overflow: hidden;\n    background-size: 92% !important;\n    background: url(../images/w-Private.png) center no-repeat;\n  }",
+        ".banner .bg .headImg {\n    width: 1.24rem;\n    height: 1.38rem;\n    margin: 1.01rem auto 0;\n  }",
+        ".banner .bg .title {\n    margin: 0.5rem 0.2rem 0;\n    font-size: 0.48rem;\n    line-height: 0.67rem;\n  }",
+        ".banner .bg .description {\n    line-height: 0.28rem;\n    margin: 0.16rem 0.2rem 0;\n    font-size: 0.2rem;\n  }",
+        ".banner .bg .title {\n    margin-top: 0.5rem;\n    font-size: 0.3rem;\n  }",
+        ".banner .bg .description {\n    font-size: 0.2rem;\n  }"
+      ],
+      "bg_styles": [
+        ".bg {\n  width: 1200px;\n  height: 500px;\n  margin: 0 auto;\n  overflow: hidden;\n  text-align: center;\n  background: url(../images/banner.png) center no-repeat;\n}",
+        ".bg .headImg {\n  width: 120px;\n  margin: 37.7px auto 0;\n}",
+        ".bg .headImg img {\n  width: 100%;\n}",
+        ".bg .title {\n  margin-top: 40px;\n  font-size: 56px;\n  color: #fff;\n  line-height: 87px;\n  font-weight: 700;\n}",
+        ".bg .description {\n  color: #fff;\n  line-height: 25px;\n  margin-top: 8px;\n  font-size: 18px;\n}",
+        ".bg .title {\n  font-size: 48px;\n  margin-top: 48px;\n}",
+        ".bg .description {\n  font-size: 14px;\n}",
+        ".bg {\n    height: 5.5rem;\n    width: 6.4rem;\n    text-align: center;\n    overflow: hidden;\n    background-size: 92% !important;\n    background: url(../images/w-Private.png) center no-repeat;\n  }",
+        ".bg .headImg {\n    width: 1.24rem;\n    height: 1.38rem;\n    margin: 1.01rem auto 0;\n  }",
+        ".bg .title {\n    margin: 0.5rem 0.2rem 0;\n    font-size: 0.48rem;\n    line-height: 0.67rem;\n  }",
+        ".bg .description {\n    line-height: 0.28rem;\n    margin: 0.16rem 0.2rem 0;\n    font-size: 0.2rem;\n  }",
+        ".bg .title {\n    margin-top: 0.5rem;\n    font-size: 0.3rem;\n  }",
+        ".bg .description {\n    font-size: 0.2rem;\n  }"
+      ]
+    },
+    "https://68tt.co/css/lang.css": {
+      "headImg_styles": [],
+      "headImg_img_styles": [],
+      "banner_styles": [],
+      "bg_styles": []
+    }
+  }
+}
