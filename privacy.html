@@ -1,228 +1,268 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>隱私政策 - 68 安全的私密聊天APP</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="icon" href="68tt_static/images/favicon.ico">
+    <title>隱私政策 - 68-安全加密即時聊天工具</title>
 </head>
-<body>
-    <!-- Header -->
-    <div class="header">
-        <div class="container">
-            <div class="logo">
-                <img src="68tt_static/images/logo.svg" alt="68 Logo" style="height: 50px; width: auto;">
-            </div>
-        </div>
-    </div>
-    
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="container">
-            <div class="nav-container">
-                <a href="./index.html">首頁</a>
-                <a href="./about.html">關於</a>
-                <a href="./privacy.html" style="color: #007bff;">隱私</a>
-                <button class="mobile-nav-toggle" aria-label="打開菜單">☰</button>
-            </div>
-        </div>
-    </nav>
-    
-    <!-- Mobile Navigation Menu -->
-    <div class="mobile-nav-overlay"></div>
-    <div class="mobile-nav-menu">
-        <a href="./index.html" class="nav-link">🏠 首頁</a>
-        <a href="./about.html" class="nav-link">ℹ️ 關於</a>
-        <a href="./privacy.html" class="nav-link" style="background-color: #f0f8ff;">🔒 隱私</a>
-        <div style="padding: 20px 30px; border-top: 1px solid #f0f0f0; margin-top: 20px;">
-            <p style="color: #666; font-size: 0.9rem; margin: 0;">68 - 安全的私密聊天</p>
-        </div>
-    </div>
-    
-    <!-- Language Switch -->
-    <div class="container">
-        <div class="language-switch">
-            <div class="language-current">
-                <span>繁體中文</span>
-                <img src="68tt_static/images/language.png" alt="Language" style="width: 16px; height: 16px;">
-            </div>
-            <div class="language-dropdown">
-                <p>繁體中文</p>
-                <p>English</p>
-                <p>Tiếng Việt</p>
-                <p>Português</p>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Privacy Content -->
-    <div class="container" style="margin-top: 40px; margin-bottom: 60px;">
-        <div style="background: #fff; padding: 60px 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-            <h1 style="text-align: center; color: #333; margin-bottom: 40px; font-size: 2.5rem;">隱私政策</h1>
-            
-            <div style="max-width: 800px; margin: 0 auto; line-height: 1.8; color: #555;">
-                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 15px; text-align: center; margin-bottom: 40px;">
-                    <h2 style="margin-bottom: 15px; font-size: 1.8rem;">您的隱私是我們的首要任務</h2>
-                    <p style="font-size: 1.1rem; margin: 0;">68 承諾保護您的個人隱私，我們採用最嚴格的隱私保護措施</p>
+<body class="cn">
+    <div class="main-wrapper">
+        <!-- Header -->
+        <div class="header">
+            <div class="inner">
+                <a href="javascript:;" class="logo">
+                    <img src="68tt_static/images/logo.png" alt="68 Logo">
+                </a>
+                <div class="nav">
+                    <a href="./index.html" class="nav-a"><span>首頁</span></a>
+                    <a href="./about.html" class="nav-a"><span>關於</span></a>
+                    <a href="./privacy.html" class="nav-a active"><span>隱私</span></a>
+                    <div class="nav-a language">
+                        <span>
+                            <div id="language-toggle">繁體中文 
+                                <img src="68tt_static/images/language.png" alt="">
+                            </div>
+                        </span>
+                        <div id="language-options">
+                            <div class="lang-item active" data-lang="cn">繁體中文</div>
+                            <div class="lang-item" data-lang="en">English</div>
+                            <div class="lang-item" data-lang="vi">Tiếng Việt</div>
+                            <div class="lang-item" data-lang="pt">Português</div>
+                        </div>
+                    </div>
                 </div>
                 
-                <section style="margin-bottom: 40px;">
-                    <h2 style="color: #333; margin-bottom: 20px; font-size: 1.6rem; border-bottom: 2px solid #007bff; padding-bottom: 10px;">1. 資訊收集</h2>
-                    <div style="background: #f8f9fa; padding: 25px; border-radius: 15px; margin-bottom: 20px;">
-                        <h3 style="color: #333; margin-bottom: 15px;">我們收集的資訊</h3>
-                        <ul style="margin-left: 20px;">
-                            <li style="margin-bottom: 10px;"><strong>帳戶資訊：</strong>註冊時提供的用戶名稱和聯繫方式</li>
-                            <li style="margin-bottom: 10px;"><strong>設備資訊：</strong>設備類型、操作系統版本等技術資訊</li>
-                            <li style="margin-bottom: 10px;"><strong>使用資訊：</strong>應用程式使用統計（不包含聊天內容）</li>
-                        </ul>
-                    </div>
-                    <div style="background: #e8f5e8; padding: 25px; border-radius: 15px; border-left: 4px solid #28a745;">
-                        <h3 style="color: #333; margin-bottom: 15px;">我們不會收集的資訊</h3>
-                        <ul style="margin-left: 20px;">
-                            <li style="margin-bottom: 10px;">❌ 聊天訊息內容</li>
-                            <li style="margin-bottom: 10px;">❌ 通話錄音或記錄</li>
-                            <li style="margin-bottom: 10px;">❌ 聯絡人清單</li>
-                            <li style="margin-bottom: 10px;">❌ 位置資訊</li>
-                        </ul>
-                    </div>
-                </section>
+                <!-- Mobile Language Toggle -->
+                <a class="phone-language" id="showPopup">
+                    <span>繁體中文 &nbsp;
+                        <img src="68tt_static/images/language.png" alt="">
+                    </span>
+                </a>
                 
-                <section style="margin-bottom: 40px;">
-                    <h2 style="color: #333; margin-bottom: 20px; font-size: 1.6rem; border-bottom: 2px solid #007bff; padding-bottom: 10px;">2. 資訊使用</h2>
-                    <p style="margin-bottom: 20px;">我們收集的有限資訊僅用於以下目的：</p>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
-                        <div style="background: #fff3cd; padding: 20px; border-radius: 10px; border-left: 4px solid #ffc107;">
-                            <h4 style="color: #333; margin-bottom: 10px;">服務提供</h4>
-                            <p style="margin: 0; font-size: 0.9rem;">維持和改善應用程式功能</p>
+                <!-- Mobile Language Popup -->
+                <div id="popupContainer">
+                    <div class="popupContent">
+                        <h3 class="title">切換語言</h3>
+                        <div>
+                            <div class="lang-item active" data-lang="cn">繁體中文</div>
+                            <div class="lang-item" data-lang="en">English</div>
+                            <div class="lang-item" data-lang="vi">Tiếng Việt</div>
+                            <div class="lang-item" data-lang="pt">Português</div>
                         </div>
-                        <div style="background: #d1ecf1; padding: 20px; border-radius: 10px; border-left: 4px solid #17a2b8;">
-                            <h4 style="color: #333; margin-bottom: 10px;">技術支援</h4>
-                            <p style="margin: 0; font-size: 0.9rem;">協助解決技術問題</p>
-                        </div>
-                        <div style="background: #f8d7da; padding: 20px; border-radius: 10px; border-left: 4px solid #dc3545;">
-                            <h4 style="color: #333; margin-bottom: 10px;">安全防護</h4>
-                            <p style="margin: 0; font-size: 0.9rem;">防止濫用和惡意行為</p>
-                        </div>
+                        <button id="closePopup"></button>
                     </div>
-                </section>
+                </div>
                 
-                <section style="margin-bottom: 40px;">
-                    <h2 style="color: #333; margin-bottom: 20px; font-size: 1.6rem; border-bottom: 2px solid #007bff; padding-bottom: 10px;">3. 端對端加密</h2>
-                    <div style="background: linear-gradient(135deg, #e8f5e8 0%, #d4edda 100%); padding: 30px; border-radius: 15px;">
-                        <div style="text-align: center; margin-bottom: 25px;">
-                            <div style="display: inline-block; background: #28a745; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 15px;">🔐</div>
-                            <h3 style="color: #333; margin-bottom: 15px;">軍用級加密保護</h3>
+                <!-- Mobile Menu Button -->
+                <div id="openBtn" class="btn">
+                    <div class="lcbody">
+                        <div class="lcitem top">
+                            <div class="rect top"></div>
                         </div>
-                        <ul style="margin-left: 20px; color: #333;">
-                            <li style="margin-bottom: 15px;"><strong>AES-256 加密：</strong>採用最高級別的加密標準</li>
-                            <li style="margin-bottom: 15px;"><strong>完美前向保密：</strong>每次對話都使用獨特的加密金鑰</li>
-                            <li style="margin-bottom: 15px;"><strong>本地加密：</strong>訊息在離開您的設備前就已加密</li>
-                            <li style="margin-bottom: 15px;"><strong>無法解密：</strong>即使是 68 的工程師也無法讀取您的訊息</li>
-                        </ul>
-                    </div>
-                </section>
-                
-                <section style="margin-bottom: 40px;">
-                    <h2 style="color: #333; margin-bottom: 20px; font-size: 1.6rem; border-bottom: 2px solid #007bff; padding-bottom: 10px;">4. 資料儲存與刪除</h2>
-                    <div style="background: #f8f9fa; padding: 25px; border-radius: 15px;">
-                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 25px;">
-                            <div>
-                                <h4 style="color: #333; margin-bottom: 10px;">📱 本地儲存</h4>
-                                <p style="font-size: 0.9rem;">訊息僅儲存在您的設備上</p>
-                            </div>
-                            <div>
-                                <h4 style="color: #333; margin-bottom: 10px;">⏰ 自動刪除</h4>
-                                <p style="font-size: 0.9rem;">可設定訊息自動刪除時間</p>
-                            </div>
-                            <div>
-                                <h4 style="color: #333; margin-bottom: 10px;">🗑️ 完全清除</h4>
-                                <p style="font-size: 0.9rem;">刪除的訊息無法復原</p>
-                            </div>
+                        <div class="lcitem center hide">
+                            <div class="rect bottom"></div>
                         </div>
-                    </div>
-                </section>
-                
-                <section style="margin-bottom: 40px;">
-                    <h2 style="color: #333; margin-bottom: 20px; font-size: 1.6rem; border-bottom: 2px solid #007bff; padding-bottom: 10px;">5. 第三方分享</h2>
-                    <div style="background: #ffe6e6; padding: 30px; border-radius: 15px; text-align: center; border: 2px solid #dc3545;">
-                        <h3 style="color: #dc3545; margin-bottom: 15px; font-size: 1.5rem;">我們絕不分享您的個人資料</h3>
-                        <p style="color: #721c24; font-size: 1.1rem; margin-bottom: 20px;">68 承諾永遠不會將您的個人資訊出售、租借或分享給第三方</p>
-                        <div style="display: inline-flex; align-items: center; background: #dc3545; color: white; padding: 10px 20px; border-radius: 25px;">
-                            <span style="font-weight: bold;">零分享政策</span>
+                        <div class="lcitem bottom">
+                            <div class="rect bottom"></div>
                         </div>
+                        <div class="close"></div>
                     </div>
-                </section>
-                
-                <section style="margin-bottom: 40px;">
-                    <h2 style="color: #333; margin-bottom: 20px; font-size: 1.6rem; border-bottom: 2px solid #007bff; padding-bottom: 10px;">6. 您的權利</h2>
-                    <div style="background: #e3f2fd; padding: 25px; border-radius: 15px;">
-                        <p style="margin-bottom: 20px; font-weight: 500;">作為 68 的用戶，您享有以下權利：</p>
-                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
-                            <div style="text-align: center;">
-                                <div style="background: #2196f3; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-size: 1.2rem;">📋</div>
-                                <h4 style="color: #333; margin-bottom: 5px;">查看資料</h4>
-                                <p style="font-size: 0.9rem; color: #666;">查看我們收集的資料</p>
-                            </div>
-                            <div style="text-align: center;">
-                                <div style="background: #2196f3; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-size: 1.2rem;">✏️</div>
-                                <h4 style="color: #333; margin-bottom: 5px;">修改資料</h4>
-                                <p style="font-size: 0.9rem; color: #666;">更正不準確的資訊</p>
-                            </div>
-                            <div style="text-align: center;">
-                                <div style="background: #2196f3; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-size: 1.2rem;">🗑️</div>
-                                <h4 style="color: #333; margin-bottom: 5px;">刪除帳戶</h4>
-                                <p style="font-size: 0.9rem; color: #666;">隨時刪除您的帳戶</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                
-                <section style="margin-bottom: 40px;">
-                    <h2 style="color: #333; margin-bottom: 20px; font-size: 1.6rem; border-bottom: 2px solid #007bff; padding-bottom: 10px;">7. 聯繫我們</h2>
-                    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 15px; text-align: center;">
-                        <h3 style="margin-bottom: 15px;">對隱私政策有任何疑問？</h3>
-                        <p style="margin-bottom: 20px;">我們的隱私保護團隊隨時為您解答</p>
-                        <a href="mailto:admin@68service.net" style="background: rgba(255,255,255,0.2); color: white; padding: 12px 25px; border-radius: 25px; text-decoration: none; font-weight: 500; display: inline-block; transition: background-color 0.3s ease;">
-                            admin@68service.net
-                        </a>
-                    </div>
-                </section>
-                
-                <div style="text-align: center; color: #666; font-size: 0.9rem; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e9ecef;">
-                    <p>最後更新日期：2024年1月1日</p>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <!-- Footer -->
-    <div class="footer">
-        <div class="container">
-            <div class="footer-logo">
-                <img src="68tt_static/images/footer-logo.svg" alt="68" style="height: 40px; width: auto;">
-            </div>
-            <p>68</p>
-            <p>支援蘋果、安卓手機</p>
-            <p style="margin: 20px 0;">免費下載</p>
-            <p>联系我们：<a href="mailto:admin@68service.net">admin@68service.net</a></p>
-            <p>Copyright © 2024 Octopus US LLC</p>
-        </div>
-    </div>
-    
-    <script>
-        // Language dropdown functionality
-        document.querySelector('.language-current').addEventListener('click', function() {
-            const dropdown = document.querySelector('.language-dropdown');
-            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-        });
         
-        // Close dropdown when clicking outside
-        document.addEventListener('click', function(event) {
-            if (!event.target.closest('.language-switch')) {
-                document.querySelector('.language-dropdown').style.display = 'none';
-            }
-        });
-    </script>
+        <!-- Mobile Navigation -->
+        <div class="w-nav" id="modal">
+            <div class="w-nav-list">
+                <div><a href="./index.html" class="w-nav-a">首頁</a></div>
+                <hr>
+                <div><a href="./about.html" class="w-nav-a">關於</a></div>
+                <hr>
+                <div><a href="./privacy.html" class="w-nav-a active">隱私</a></div>
+            </div>
+            <div class="nav-modal"></div>
+        </div>
+        
+        <!-- Up Arrow -->
+        <div class="up-arrow">
+            <img src="68tt_static/images/up-arrow.png" alt="">
+        </div>
+        
+        <!-- Privacy Content -->
+        <div class="privacy-page">
+            <div class="privacy-banner">
+                <div class="privacy-bg">
+                    <div class="privacy-title">隱私政策</div>
+                    <div class="privacy-subtitle">您的隱私是我們最重要的承諾</div>
+                </div>
+            </div>
+            
+            <div class="privacy-content">
+                <div class="privacy-intro">
+                    <div class="intro-text">
+                        在 68，我們深知隱私保護的重要性。本隱私政策詳細說明我們如何收集、使用、保護和處理您的個人資訊。我們承諾以最高標準保護您的隱私權。
+                    </div>
+                    <div class="last-updated">最後更新：2024年8月</div>
+                </div>
+                
+                <div class="privacy-sections">
+                    <div class="privacy-section">
+                        <div class="section-number">1</div>
+                        <div class="section-content">
+                            <div class="section-title">資訊收集</div>
+                            <div class="section-text">
+                                <p><strong>我們收集的資訊類型：</strong></p>
+                                <ul>
+                                    <li><strong>帳戶資訊：</strong>註冊時提供的用戶名、電子郵件地址等基本資訊</li>
+                                    <li><strong>技術資訊：</strong>設備類型、作業系統版本、IP地址等用於改善服務品質的技術資料</li>
+                                    <li><strong>使用資訊：</strong>應用程式使用統計，但不包含訊息內容</li>
+                                </ul>
+                                <p><strong>我們不會收集：</strong></p>
+                                <ul>
+                                    <li>您的聊天訊息內容</li>
+                                    <li>通話記錄或語音內容</li>
+                                    <li>聯絡人資訊（除非您主動分享）</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="privacy-section">
+                        <div class="section-number">2</div>
+                        <div class="section-content">
+                            <div class="section-title">端對端加密</div>
+                            <div class="section-text">
+                                <p>68 採用業界領先的端對端加密技術：</p>
+                                <ul>
+                                    <li><strong>訊息加密：</strong>所有訊息在發送前即在您的設備上加密，只有接收方能夠解密</li>
+                                    <li><strong>金鑰管理：</strong>加密金鑰僅存儲在您的設備上，我們無法存取</li>
+                                    <li><strong>完美前向保密：</strong>即使某個會話的金鑰被洩露，也不會影響其他會話的安全</li>
+                                    <li><strong>驗證機制：</strong>提供安全碼驗證功能，確保通訊對象身份</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="privacy-section">
+                        <div class="section-number">3</div>
+                        <div class="section-content">
+                            <div class="section-title">資料處理與存儲</div>
+                            <div class="section-text">
+                                <p><strong>本地存儲：</strong></p>
+                                <ul>
+                                    <li>聊天記錄僅存儲在您的設備上</li>
+                                    <li>我們的伺服器不會存儲您的訊息內容</li>
+                                    <li>您可以隨時刪除本地聊天記錄</li>
+                                </ul>
+                                <p><strong>伺服器處理：</strong></p>
+                                <ul>
+                                    <li>僅處理加密後的訊息傳輸</li>
+                                    <li>暫時存儲加密訊息以確保送達（最多7天）</li>
+                                    <li>訊息送達後立即從伺服器刪除</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="privacy-section">
+                        <div class="section-number">4</div>
+                        <div class="section-content">
+                            <div class="section-title">第三方分享</div>
+                            <div class="section-text">
+                                <p>我們承諾：</p>
+                                <ul>
+                                    <li><strong>零分享政策：</strong>我們不會向任何第三方出售、租借或分享您的個人資訊</li>
+                                    <li><strong>法律要求：</strong>除非法律明確要求，否則我們不會向政府或執法部門提供用戶資料</li>
+                                    <li><strong>技術限制：</strong>由於端對端加密的特性，即使我們想要，也無法存取您的訊息內容</li>
+                                    <li><strong>透明度報告：</strong>我們定期發布透明度報告，公開任何政府資料請求的統計資訊</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="privacy-section">
+                        <div class="section-number">5</div>
+                        <div class="section-content">
+                            <div class="section-title">用戶權利</div>
+                            <div class="section-text">
+                                <p>您享有以下權利：</p>
+                                <ul>
+                                    <li><strong>存取權：</strong>您可以請求查看我們持有的關於您的資訊</li>
+                                    <li><strong>更正權：</strong>您可以要求更正不準確的個人資訊</li>
+                                    <li><strong>刪除權：</strong>您可以要求刪除您的帳戶和相關資料</li>
+                                    <li><strong>可攜權：</strong>您可以要求以可讀格式匯出您的資料</li>
+                                    <li><strong>拒絕權：</strong>您可以拒絕某些資料處理活動</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="privacy-section">
+                        <div class="section-number">6</div>
+                        <div class="section-content">
+                            <div class="section-title">安全措施</div>
+                            <div class="section-text">
+                                <p>我們採取的安全措施包括：</p>
+                                <ul>
+                                    <li><strong>技術保護：</strong>使用最先進的加密技術和安全協議</li>
+                                    <li><strong>存取控制：</strong>嚴格限制員工對用戶資料的存取權限</li>
+                                    <li><strong>定期審計：</strong>定期進行安全審計和漏洞測試</li>
+                                    <li><strong>事故回應：</strong>建立完善的安全事故回應機制</li>
+                                    <li><strong>員工培訓：</strong>定期對員工進行隱私保護培訓</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="privacy-section">
+                        <div class="section-number">7</div>
+                        <div class="section-content">
+                            <div class="section-title">政策更新</div>
+                            <div class="section-text">
+                                <p>關於隱私政策的更新：</p>
+                                <ul>
+                                    <li>我們會在隱私政策發生重大變更時提前通知您</li>
+                                    <li>通知方式包括應用程式內通知、電子郵件或官方網站公告</li>
+                                    <li>您可以隨時查看最新版本的隱私政策</li>
+                                    <li>繼續使用我們的服務即表示您同意更新後的隱私政策</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="privacy-contact">
+                    <div class="contact-card">
+                        <div class="contact-title">有隱私相關問題？</div>
+                        <div class="contact-desc">如果您對我們的隱私政策有任何疑問或建議，請隨時聯絡我們</div>
+                        <div class="contact-email">
+                            <a href="mailto:privacy@68service.net">privacy@68service.net</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="68tt_static/images/footer-logo.png" alt="68">
+                </div>
+                <div class="contact-info">
+                    <div>联系我们：<a href="mailto:admin@68service.net">admin@68service.net</a></div>
+                    <div class="copyright">Copyright © 2024 Octopus US LLC</div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <img src="68tt_static/images/w-bottom.png" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
