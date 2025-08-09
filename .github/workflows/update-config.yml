@@ -1,0 +1,107 @@
+name: Update Site Configuration
+
+on:
+  workflow_dispatch:
+    inputs:
+      site_title:
+        description: '网站标题'
+        required: true
+        default: '68-安全加密即時聊天工具'
+      site_description:
+        description: '网站描述'
+        required: true
+        default: '68是一款注重安全和隱私的即時通訊軟體'
+      android_url:
+        description: 'Android下载链接'
+        required: true
+        default: 'https://example.com/android-download'
+      ios_url:
+        description: 'iOS下载链接'
+        required: true
+        default: 'https://example.com/ios-download'
+      contact_email:
+        description: '联系邮箱'
+        required: true
+        default: 'admin@68service.net'
+
+permissions:
+  contents: write
+
+jobs:
+  update-config:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Update configuration
+        run: |
+          # 读取现有配置
+          CONFIG_FILE="data.json"
+          
+          # 使用 jq 更新配置
+          sudo apt-get update && sudo apt-get install -y jq
+          
+          # 更新配置数据
+          jq --arg title "${{ github.event.inputs.site_title }}" \
+             --arg desc "${{ github.event.inputs.site_description }}" \
+             --arg android "${{ github.event.inputs.android_url }}" \
+             --arg ios "${{ github.event.inputs.ios_url }}" \
+             --arg email "${{ github.event.inputs.contact_email }}" \
+             --arg date "$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)" \
+             '.site.title = $title | 
+              .site.description = $desc | 
+              .downloads.android.url = $android | 
+              .downloads.ios.url = $ios | 
+              .contact.email = $email | 
+              .lastModified = $date' \
+             $CONFIG_FILE > temp.json && mv temp.json $CONFIG_FILE
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data.json
+          git commit -m "🔧 更新网站配置
+
+          - 标题: ${{ github.event.inputs.site_title }}
+          - 描述: ${{ github.event.inputs.site_description }}
+          - Android: ${{ github.event.inputs.android_url }}
+          - iOS: ${{ github.event.inputs.ios_url }}
+          - 邮箱: ${{ github.event.inputs.contact_email }}
+          
+          更新时间: $(date -u +%Y-%m-%d\ %H:%M:%S\ UTC)
+          操作者: ${{ github.actor }}"
+          
+          git push
+
+      - name: Create release
+        if: success()
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: config-update-${{ github.run_number }}
+          release_name: 配置更新 ${{ github.run_number }}
+          body: |
+            ## 🔧 配置更新详情
+            
+            **更新时间**: $(date -u +%Y-%m-%d\ %H:%M:%S\ UTC)
+            **操作者**: ${{ github.actor }}
+            
+            ### 更新内容
+            - **网站标题**: ${{ github.event.inputs.site_title }}
+            - **网站描述**: ${{ github.event.inputs.site_description }}
+            - **Android下载**: ${{ github.event.inputs.android_url }}
+            - **iOS下载**: ${{ github.event.inputs.ios_url }}
+            - **联系邮箱**: ${{ github.event.inputs.contact_email }}
+            
+            ### 部署状态
+            前端页面将在几分钟内自动更新。
+          draft: false
+          prerelease: false
